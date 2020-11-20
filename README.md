@@ -1,1 +1,4 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+Ganira.net
+
+
+NEXT.js implementation in progress
