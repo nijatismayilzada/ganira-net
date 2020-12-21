@@ -33,9 +33,9 @@ const Article = ({article, categories}) => {
                     <hr className="uk-divider-small"/>
                     <div className="uk-grid-small uk-flex-left" data-uk-grid="true">
                         <div>
-                            {article.author.picture && (
+                            {article.writer.picture && (
                                 <Image
-                                    image={article.author.picture}
+                                    image={article.writer.picture}
                                     style={{
                                         position: "static",
                                         borderRadius: "50%",
@@ -46,10 +46,10 @@ const Article = ({article, categories}) => {
                         </div>
                         <div className="uk-width-expand">
                             <p className="uk-margin-remove-bottom">
-                                By {article.author.name}
+                                By {article.writer.name}
                             </p>
                             <p className="uk-text-meta uk-margin-remove-top">
-                               <Date dateString={article.issued_at}/>
+                               <Date dateString={article.published_at}/>
                             </p>
                         </div>
                     </div>
@@ -74,7 +74,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({params}) {
     const articles = await fetchAPI(
-        `/articles?slug=${params.slug}&status=published`
+        `/articles?slug=${params.slug}`
     );
     const categories = await fetchAPI("/categories");
 
