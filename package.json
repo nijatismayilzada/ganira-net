@@ -16,5 +16,8 @@
     "react-dom": "16.13.1",
     "remark": "^13.0.0",
     "remark-html": "^13.0.1"
+  },
+  "devDependencies": {
+    "react-markdown": "^5.0.3"
   }
 }
