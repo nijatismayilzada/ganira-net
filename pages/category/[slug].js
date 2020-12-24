@@ -3,7 +3,7 @@ import Layout from "../../components/layout";
 import Seo from "../../components/seo";
 import {fetchAPI} from "../../lib/api";
 
-const Category = ({category, categories}) => {
+const Category = ({category, categories, articles}) => {
     const seo = {
         metaTitle: category.name,
         metaDescription: `All ${category.name} articles`,
@@ -15,7 +15,7 @@ const Category = ({category, categories}) => {
             <div className="uk-section">
                 <div className="uk-container uk-container-large">
                     <h1>{category.name}</h1>
-                    <Articles articles={category.articles}/>
+                    <Articles articles={articles}/>
                 </div>
             </div>
         </Layout>
@@ -23,24 +23,27 @@ const Category = ({category, categories}) => {
 };
 
 export async function getStaticPaths() {
-    const categories = await fetchAPI("/categories");
+    const articles = await fetchAPI("/articles");
+    const categories = [...new Map(articles.flatMap((article) => article.category).map(item => [item['id'], item])).values()]
 
     return {
-        paths: categories.map((category) => ({
-            params: {
-                slug: category.slug,
-            },
-        })),
+        paths: categories.map((category) => ({params: {slug: category.slug}})),
         fallback: false,
     };
 }
 
 export async function getStaticProps({params}) {
-    const category = (await fetchAPI(`/categories?slug=${params.slug}`))[0];
-    const categories = await fetchAPI("/categories");
+    const allArticles = await fetchAPI("/articles");
+    const categories = [...new Map(allArticles.flatMap((article) => article.category).map(item => [item['id'], item])).values()]
+
+    const articles = allArticles.filter((article) => {
+        return article.category.slug === params.slug;
+    })
+
+    const category = articles[0].category;
 
     return {
-        props: {category, categories},
+        props: {category, categories, articles},
         revalidate: 1,
     };
 }

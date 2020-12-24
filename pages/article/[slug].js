@@ -49,7 +49,7 @@ const Article = ({article, categories}) => {
                                 By {article.writer.name}
                             </p>
                             <p className="uk-text-meta uk-margin-remove-top">
-                               <Date dateString={article.published_at}/>
+                                <Date dateString={article.published_at}/>
                             </p>
                         </div>
                     </div>
@@ -63,23 +63,24 @@ export async function getStaticPaths() {
     const articles = await fetchAPI("/articles");
 
     return {
-        paths: articles.map((article) => ({
-            params: {
-                slug: article.slug,
-            },
-        })),
+        paths: articles
+            .map((article) => ({params: {slug: article.slug}})),
         fallback: false,
     };
 }
 
 export async function getStaticProps({params}) {
-    const articles = await fetchAPI(
-        `/articles?slug=${params.slug}`
-    );
-    const categories = await fetchAPI("/categories");
+    const articles = await fetchAPI("/articles");
+
+    const categories = [...new Map(articles.flatMap((article) => article.category).map(item => [item['id'], item])).values()];
+
+    const article = articles
+        .find((article) => {
+            if (article.slug === params.slug) return article
+        })
 
     return {
-        props: {article: articles[0], categories},
+        props: {article, categories},
         revalidate: 1,
     };
 }

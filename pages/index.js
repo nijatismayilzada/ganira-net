@@ -2,16 +2,16 @@ import React from "react";
 import Articles from "../components/articles";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
-import { fetchAPI } from "../lib/api";
+import {fetchAPI} from "../lib/api";
 
-const Home = ({ articles, categories, homepage }) => {
+const Home = ({articles, categories, homepage}) => {
     return (
         <Layout categories={categories}>
-            <Seo seo={homepage.seo} />
+            <Seo seo={homepage.seo}/>
             <div className="uk-section">
                 <div className="uk-container uk-container-large">
                     <h1>{homepage.hero.title}</h1>
-                    <Articles articles={articles} />
+                    <Articles articles={articles}/>
                 </div>
             </div>
         </Layout>
@@ -20,14 +20,15 @@ const Home = ({ articles, categories, homepage }) => {
 
 export async function getStaticProps() {
     // Run API calls in parallel
-    const [articles, categories, homepage] = await Promise.all([
+    const [articles, homepage] = await Promise.all([
         fetchAPI("/articles"),
-        fetchAPI("/categories"),
         fetchAPI("/homepage"),
     ]);
 
+    const categories = [...new Map(articles.flatMap((article) => article.category).map(item => [item['id'], item])).values()]
+
     return {
-        props: { articles, categories, homepage },
+        props: {articles, categories, homepage},
         revalidate: 1,
     };
 }
