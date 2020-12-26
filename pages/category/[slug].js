@@ -2,6 +2,7 @@ import Articles from "../../components/articles";
 import Layout from "../../components/layout";
 import Seo from "../../components/seo";
 import {fetchAPI} from "../../lib/api";
+import React from "react";
 
 const Category = ({category, categories, articles}) => {
     const seo = {
@@ -22,19 +23,26 @@ const Category = ({category, categories, articles}) => {
     );
 };
 
-export async function getStaticPaths() {
+export async function getStaticPaths({locales}) {
     const articles = await fetchAPI("/articles");
     const categories = [...new Map(articles.flatMap((article) => article.category).map(item => [item['id'], item])).values()]
 
+    const paths = []
+    categories.forEach((category) => {
+        locales.forEach((locale) => {
+                paths.push({params: {slug: category.slug}, locale})
+            }
+        )
+    });
+
     return {
-        paths: categories.map((category) => ({params: {slug: category.slug}})),
+        paths: paths,
         fallback: false,
     };
 }
 
 export async function getStaticProps({params}) {
     const allArticles = await fetchAPI("/articles");
-    const categories = [...new Map(allArticles.flatMap((article) => article.category).map(item => [item['id'], item])).values()]
 
     const articles = allArticles.filter((article) => {
         return article.category.slug === params.slug;
@@ -42,10 +50,16 @@ export async function getStaticProps({params}) {
 
     const category = articles[0].category;
 
+    const localisedArticles = allArticles.filter((article) => {
+        return article.category.locale === category.locale;
+    })
+
+    const categories = [...new Map(localisedArticles.flatMap((article) => article.category).map(item => [item['id'], item])).values()]
+
     return {
         props: {category, categories, articles},
         revalidate: 1,
     };
 }
 
-export default Category;
+export default Category

@@ -18,12 +18,16 @@ const Home = ({articles, categories, homepage}) => {
     );
 };
 
-export async function getStaticProps() {
+export async function getStaticProps({locale, locales}) {
     // Run API calls in parallel
-    const [articles, homepage] = await Promise.all([
+    const [allArticles, homepage] = await Promise.all([
         fetchAPI("/articles"),
         fetchAPI("/homepage"),
     ]);
+
+    const articles = allArticles.filter((article) => {
+        return article.category.locale === locale;
+    })
 
     const categories = [...new Map(articles.flatMap((article) => article.category).map(item => [item['id'], item])).values()]
 
@@ -33,4 +37,4 @@ export async function getStaticProps() {
     };
 }
 
-export default Home;
+export default Home

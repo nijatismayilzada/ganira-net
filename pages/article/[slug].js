@@ -59,12 +59,19 @@ const Article = ({article, categories}) => {
     );
 };
 
-export async function getStaticPaths() {
+export async function getStaticPaths({locales}) {
     const articles = await fetchAPI("/articles");
 
+    const paths = []
+    articles.forEach((article) => {
+        locales.forEach((locale) => {
+                paths.push({params: {slug: article.slug}, locale})
+            }
+        )
+    });
+
     return {
-        paths: articles
-            .map((article) => ({params: {slug: article.slug}})),
+        paths: paths,
         fallback: false,
     };
 }
@@ -72,12 +79,16 @@ export async function getStaticPaths() {
 export async function getStaticProps({params}) {
     const articles = await fetchAPI("/articles");
 
-    const categories = [...new Map(articles.flatMap((article) => article.category).map(item => [item['id'], item])).values()];
-
     const article = articles
         .find((article) => {
             if (article.slug === params.slug) return article
         })
+
+    const localisedArticles = articles.filter((art) => {
+        return art.locale === article.locale;
+    })
+
+    const categories = [...new Map(localisedArticles.flatMap((article) => article.category).map(item => [item['id'], item])).values()];
 
     return {
         props: {article, categories},
@@ -85,4 +96,4 @@ export async function getStaticProps({params}) {
     };
 }
 
-export default Article;
+export default Article

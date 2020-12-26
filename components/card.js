@@ -1,14 +1,14 @@
 import React from "react";
-import Link from "next/link";
 import Image from "./image";
+import Link from "next/link";
 
-const Card = ({ article }) => {
+const Card = ({article}) => {
     return (
         <Link as={`/article/${article.slug}`} href="/article/[id]">
             <a className="uk-link-reset">
                 <div className="uk-card uk-card-muted">
                     <div className="uk-card-media-top">
-                        <Image image={article.image} />
+                        <Image image={article.image}/>
                     </div>
                     <div className="uk-card-body">
                         <p id="category" className="uk-text-uppercase">
@@ -24,4 +24,4 @@ const Card = ({ article }) => {
     );
 };
 
-export default Card;
+export default Card

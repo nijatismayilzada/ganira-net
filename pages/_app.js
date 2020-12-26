@@ -1,8 +1,7 @@
 import App from "next/app";
 import Head from "next/head";
-import { appWithTranslation } from '../i18n'
 import "../styles/style.css";
-import {createContext} from "react";
+import React, {createContext} from "react";
 import {fetchAPI, getStrapiMedia} from "../lib/api";
 
 // Store Strapi Global object in context
@@ -47,4 +46,4 @@ MyApp.getInitialProps = async (ctx) => {
     return {...appProps, pageProps: {global}};
 };
 
-export default appWithTranslation(MyApp);
+export default MyApp;

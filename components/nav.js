@@ -1,9 +1,7 @@
 import React from "react";
-import PropTypes from 'prop-types'
 import Link from "next/link";
-import { i18n, withTranslation } from '../i18n'
 
-const Nav = ({categories, t}) => {
+const Nav = ({categories}) => {
     return (
         <div>
             <nav className="uk-navbar-container" data-uk-navbar>
@@ -11,13 +9,8 @@ const Nav = ({categories, t}) => {
                     <ul className="uk-navbar-nav">
                         <li>
                             <Link href="/">
-                                <a>{t('title')}</a>
+                                <a>GANIRA.NET</a>
                             </Link>
-                            <button
-                                onClick={() => i18n.changeLanguage(i18n.language === 'en' ? 'az' : 'en')}
-                            >
-                                Change locale
-                            </button>
                         </li>
                     </ul>
                 </div>
@@ -39,12 +32,4 @@ const Nav = ({categories, t}) => {
     );
 };
 
-Nav.getInitialProps = async () => ({
-    namespacesRequired: ['common'],
-})
-
-Nav.propTypes = {
-    t: PropTypes.func.isRequired,
-}
-
-export default withTranslation('common')(Nav)
+export default Nav
