@@ -6,7 +6,7 @@ const Card = ({article}) => {
     return (
         <Link as={`/article/${article.slug}`} href="/article/[id]">
             <a className="uk-link-reset">
-                <div className="uk-card uk-card-muted">
+                <div className="uk-card uk-card-default uk-card-muted">
                     <div className="uk-card-media-top">
                         <Image image={article.image}/>
                     </div>
@@ -16,6 +16,9 @@ const Card = ({article}) => {
                         </p>
                         <p id="title" className="uk-text-large">
                             {article.title}
+                        </p>
+                        <p id="description" className="uk-text-lighter uk-text-italic">
+                            {article.description}
                         </p>
                     </div>
                 </div>

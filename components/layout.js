@@ -1,8 +1,9 @@
 import Nav from "./nav";
+import React from "react";
 
-const Layout = ({children, categories, seo}) => (
+const Layout = ({children, categories, pages}) => (
     <>
-        <Nav categories={categories}/>
+        <Nav categories={categories} pages={pages}/>
         {children}
     </>
 );

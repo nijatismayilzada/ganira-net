@@ -4,14 +4,14 @@ import Seo from "../../components/seo";
 import {fetchAPI} from "../../lib/api";
 import React from "react";
 
-const Category = ({category, categories, articles}) => {
+const Category = ({category, categories, articles, pages}) => {
     const seo = {
         metaTitle: category.name,
         metaDescription: `All ${category.name} articles`,
     };
 
     return (
-        <Layout categories={categories}>
+        <Layout categories={categories} pages={pages}>
             <Seo seo={seo}/>
             <div className="uk-section">
                 <div className="uk-container uk-container-large">
@@ -41,8 +41,11 @@ export async function getStaticPaths({locales}) {
     };
 }
 
-export async function getStaticProps({params}) {
-    const allArticles = await fetchAPI("/articles");
+export async function getStaticProps({params, locale}) {
+    const [allArticles, pages] = await Promise.all([
+        fetchAPI("/articles"),
+        fetchAPI(`/pages?locale=${locale}`),
+    ]);
 
     const articles = allArticles.filter((article) => {
         return article.category.slug === params.slug;
@@ -50,14 +53,13 @@ export async function getStaticProps({params}) {
 
     const category = articles[0].category;
 
-    const localisedArticles = allArticles.filter((article) => {
-        return article.category.locale === category.locale;
-    })
-
-    const categories = [...new Map(localisedArticles.flatMap((article) => article.category).map(item => [item['id'], item])).values()]
+    const categories = [...new Map(allArticles
+        .filter((article) => article.category.locale === locale)
+        .flatMap((article) => article.category)
+        .map(item => [item['id'], item])).values()]
 
     return {
-        props: {category, categories, articles},
+        props: {category, categories, articles, pages},
         revalidate: 1,
     };
 }

@@ -3,12 +3,10 @@ a {
 }
 
 h1 {
-    font-family: Staatliches;
     font-size: 120px;
 }
 
 #category {
-    font-family: Staatliches;
     font-weight: 500;
 }
 
@@ -19,9 +17,24 @@ h1 {
     line-height: 1.13636;
 }
 
+#description {
+    letter-spacing: 0.4px;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.13636;
+}
+
 #banner {
     margin: 20px;
-    height: 800px;
+    height: 600px;
+}
+#main-banner {
+    margin: 20px;
+}
+
+.flag {
+    width: 40px;
+    height: 20px;
 }
 
 #editor {
@@ -32,7 +45,6 @@ h1 {
 
 .uk-navbar-container {
     background: #fff !important;
-    font-family: Staatliches;
 }
 
 img:hover {

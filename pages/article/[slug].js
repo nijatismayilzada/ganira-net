@@ -4,8 +4,9 @@ import Layout from "../../components/layout";
 import Image from "../../components/image";
 import Seo from "../../components/seo";
 import Date from "../../components/date";
+import React from "react";
 
-const Article = ({article, categories}) => {
+const Article = ({article, pages, categories}) => {
     const imageUrl = getStrapiMedia(article.image);
 
     const seo = {
@@ -16,7 +17,7 @@ const Article = ({article, categories}) => {
     };
 
     return (
-        <Layout categories={categories}>
+        <Layout categories={categories} pages={pages}>
             <Seo seo={seo}/>
             <div
                 id="banner"
@@ -76,22 +77,23 @@ export async function getStaticPaths({locales}) {
     };
 }
 
-export async function getStaticProps({params}) {
-    const articles = await fetchAPI("/articles");
+export async function getStaticProps({params, locale}) {
+    const [articles, pages] = await Promise.all([
+        fetchAPI("/articles"),
+        fetchAPI(`/pages?locale=${locale}`),
+    ]);
 
     const article = articles
         .find((article) => {
             if (article.slug === params.slug) return article
         })
 
-    const localisedArticles = articles.filter((art) => {
-        return art.locale === article.locale;
-    })
-
-    const categories = [...new Map(localisedArticles.flatMap((article) => article.category).map(item => [item['id'], item])).values()];
+    const categories = [...new Map(articles
+        .filter((article) => article.locale === locale)
+        .flatMap((article) => article.category).map(item => [item['id'], item])).values()];
 
     return {
-        props: {article, categories},
+        props: {article, pages, categories},
         revalidate: 1,
     };
 }

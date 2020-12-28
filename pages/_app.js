@@ -16,10 +16,6 @@ const MyApp = ({Component, pageProps}) => {
                 <link rel="shortcut icon" href={getStrapiMedia(global.favicon)}/>
                 <link
                     rel="stylesheet"
-                    href="https://fonts.googleapis.com/css?family=Staatliches"
-                />
-                <link
-                    rel="stylesheet"
                     href="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/css/uikit.min.css"
                 />
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/js/uikit.min.js"/>
