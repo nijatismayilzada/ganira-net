@@ -6,7 +6,7 @@ import {getStrapiMedia} from "../lib/api";
 const Seo = ({ seo }) => {
     const { defaultSeo, siteName } = useContext(GlobalContext);
     const seoWithDefaults = {
-        ...defaultSeo,
+        ...defaultSeo[0],
         ...seo,
     };
     const fullSeo = {
