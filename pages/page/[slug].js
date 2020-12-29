@@ -33,15 +33,12 @@ const Page = ({page, pages, categories}) => {
     );
 };
 
-export async function getStaticPaths({locales}) {
+export async function getStaticPaths() {
     const pages = await fetchAPI("/pages");
 
     const paths = []
     pages.forEach((page) => {
-        locales.forEach((locale) => {
-                paths.push({params: {slug: page.slug}, locale})
-            }
-        )
+        paths.push({params: {slug: page.slug}, locale: page.locale});
     });
 
     return {
@@ -51,22 +48,20 @@ export async function getStaticPaths({locales}) {
 }
 
 export async function getStaticProps({params, locale}) {
-    const [articles, rawPages] = await Promise.all([
+    const [articles, pages] = await Promise.all([
         fetchAPI("/articles"),
         fetchAPI(`/pages?locale=${locale}`),
     ]);
 
-    const pages = JSON.parse(JSON.stringify(rawPages));
-
-    const categories = JSON.parse(JSON.stringify([...new Map(articles
+    const categories = [...new Map(articles
         .filter((article) => article.category.locale === locale)
         .flatMap((article) => article.category)
-        .map(item => [item['id'], item])).values()]));
+        .map(item => [item['id'], item])).values()]
 
-    const page = JSON.parse(JSON.stringify(pages
-            .find((page) => {
-                if (page.slug === params.slug) return page
-            })));
+    const page = pages
+        .find((page) => {
+            if (page.slug === params.slug) return page
+        })
 
     return {
         props: {page, pages, categories},
