@@ -1,10 +1,9 @@
 import ReactMarkdown from "react-markdown";
-import {fetchAPI, getStrapiMedia} from "../../lib/api";
+import {fetchAPI} from "../../lib/runtimeLib";
 import Layout from "../../components/layout";
 import Seo from "../../components/seo";
 
 const Page = ({page, pages, categories}) => {
-    const imageUrl = getStrapiMedia(page.image);
 
     const seo = {
         metaTitle: page.name,
@@ -18,8 +17,8 @@ const Page = ({page, pages, categories}) => {
             <div
                 id="banner"
                 className="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light uk-padding uk-margin"
-                data-src={imageUrl}
-                data-srcset={imageUrl}
+                data-src={`/content/${page.image.name}`}
+                data-srcset={`/content/${page.image.name}`}
                 data-uk-img
             >
                 <h1>{page.name}</h1>

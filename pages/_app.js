@@ -2,7 +2,7 @@ import App from "next/app";
 import Head from "next/head";
 import "../styles/style.css";
 import React, {createContext} from "react";
-import {fetchAPI, getStrapiMedia} from "../lib/api";
+import {fetchAPI} from "../lib/runtimeLib";
 
 // Store Strapi Global object in context
 export const GlobalContext = createContext({});
@@ -13,7 +13,7 @@ const MyApp = ({Component, pageProps}) => {
     return (
         <>
             <Head>
-                <link rel="shortcut icon" href={getStrapiMedia(global.favicon)}/>
+                <link rel="shortcut icon" href="/glogo.png"/>
                 <link
                     rel="stylesheet"
                     href="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/css/uikit.min.css"

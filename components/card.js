@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "./image";
 import Link from "next/link";
 
 const Card = ({article}) => {
@@ -8,7 +7,10 @@ const Card = ({article}) => {
             <a className="uk-link-reset">
                 <div className="uk-card uk-card-default uk-card-muted">
                     <div className="uk-card-media-top">
-                        <Image image={article.image}/>
+                        <img
+                            src={`/content/${article.image.name}`}
+                            alt={article.image.alternativeText || article.image.name}
+                        />
                     </div>
                     <div className="uk-card-body">
                         <p id="category" className="uk-text-uppercase">

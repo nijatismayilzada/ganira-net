@@ -1,13 +1,11 @@
 import ReactMarkdown from "react-markdown";
-import {fetchAPI, getStrapiMedia} from "../../lib/api";
+import {fetchAPI} from "../../lib/runtimeLib";
 import Layout from "../../components/layout";
-import Image from "../../components/image";
 import Seo from "../../components/seo";
 import Date from "../../components/date";
 import React from "react";
 
 const Article = ({article, pages, categories}) => {
-    const imageUrl = getStrapiMedia(article.image);
 
     const seo = {
         metaTitle: article.title,
@@ -22,8 +20,8 @@ const Article = ({article, pages, categories}) => {
             <div
                 id="banner"
                 className="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light uk-padding uk-margin"
-                data-src={imageUrl}
-                data-srcset={imageUrl}
+                data-src={`/content/${article.image.name}`}
+                data-srcset={`/content/${article.image.name}`}
                 data-uk-img
             >
                 <h1>{article.title}</h1>
@@ -35,8 +33,9 @@ const Article = ({article, pages, categories}) => {
                     <div className="uk-grid-small uk-flex-left" data-uk-grid="true">
                         <div>
                             {article.writer.picture && (
-                                <Image
-                                    image={article.writer.picture}
+                                <img
+                                    src={`/content/${article.writer.picture.name}`}
+                                    alt={article.writer.picture.alternativeText || article.writer.picture.name}
                                     style={{
                                         position: "static",
                                         borderRadius: "50%",

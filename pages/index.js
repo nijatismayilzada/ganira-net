@@ -2,10 +2,11 @@ import React from "react";
 import Articles from "../components/articles";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
-import {fetchAPI, getStrapiMedia} from "../lib/api";
+import {fetchAPI} from "../lib/runtimeLib";
+import {fetchImage} from "../lib/buildtimeLib";
 
 const Home = ({articles, categories, global, pages}) => {
-    const imageUrl = getStrapiMedia( global.defaultSeo[0].shareImage);
+
     return (
         <>
 
@@ -14,11 +15,11 @@ const Home = ({articles, categories, global, pages}) => {
                 <div
                     id="main-banner"
                     className="uk-height-large uk-flex uk-flex-center uk-background-cover uk-light uk-padding uk-margin"
-                    data-src={imageUrl}
-                    data-srcset={imageUrl}
+                    data-src={`/content/${global.defaultSeo[0].shareImage.name}`}
+                    data-srcset={`/content/${global.defaultSeo[0].shareImage.name}`}
                     data-uk-img
                 >
-                    <h1>{global.hero.title}</h1>
+                    <h1>{global.defaultSeo[0].metaTitle}</h1>
                 </div>
                 <div className="uk-section">
                     <div className="uk-container uk-container-large">
@@ -41,6 +42,18 @@ export async function getStaticProps({locale}) {
     const articles = allArticles.filter((article) => article.category.locale === locale)
 
     const categories = [...new Map(articles.flatMap((article) => article.category).map(item => [item['id'], item])).values()]
+
+    await fetchImage(global.defaultSeo[0].shareImage);
+
+    for (const article of articles) {
+        await fetchImage(article.image);
+        await fetchImage(article.writer.picture);
+    }
+
+    for (const page of pages) {
+        await fetchImage(page.image);
+    }
+
 
     return {
         props: {articles, categories, global, pages},

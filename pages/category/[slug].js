@@ -1,7 +1,7 @@
 import Articles from "../../components/articles";
 import Layout from "../../components/layout";
 import Seo from "../../components/seo";
-import {fetchAPI} from "../../lib/api";
+import {fetchAPI} from "../../lib/runtimeLib";
 import React from "react";
 
 const Category = ({category, categories, articles, pages}) => {
