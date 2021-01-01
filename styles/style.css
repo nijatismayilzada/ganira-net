@@ -4,6 +4,12 @@ a {
 
 h1 {
     font-size: 120px;
+    font-family: GreatVibes;
+    color: #d28622 !important;
+    text-shadow: -2px 2px 4px #ffffff,
+    2px 2px 2px #ffffff,
+    2px -2px 0 #ffffff,
+    -2px -2px 0 #ffffff;
 }
 
 #category {
@@ -28,6 +34,7 @@ h1 {
     margin: 20px;
     height: 600px;
 }
+
 #main-banner {
     margin: 20px;
 }
@@ -50,4 +57,11 @@ h1 {
 img:hover {
     opacity: 1;
     transition: opacity 0.25s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+@font-face {
+    font-family: 'GreatVibes';
+    font-style: normal;
+    font-weight: 400;
+    src: local('GreatVibes'), url(/fonts/GreatVibes.otf) format('truetype');
 }
