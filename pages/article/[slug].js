@@ -88,8 +88,9 @@ export async function getStaticProps({params, locale}) {
         })
 
     const categories = [...new Map(articles
-        .filter((article) => article.locale === locale)
-        .flatMap((article) => article.category).map(item => [item['id'], item])).values()];
+        .filter((article) => article.category.locale === locale)
+        .flatMap((article) => article.category)
+        .map(item => [item['id'], item])).values()];
 
     return {
         props: {article, pages, categories},
