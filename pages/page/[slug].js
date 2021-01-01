@@ -17,8 +17,8 @@ const Page = ({page, pages, categories}) => {
             <div
                 id="banner"
                 className="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light uk-padding uk-margin"
-                data-src={`/content/${page.image.name}`}
-                data-srcset={`/content/${page.image.name}`}
+                data-src={page.image.url}
+                data-srcset={page.image.url}
                 data-uk-img
             >
                 <h1>{page.name}</h1>

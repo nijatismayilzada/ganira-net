@@ -20,8 +20,8 @@ const Article = ({article, pages, categories}) => {
             <div
                 id="banner"
                 className="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light uk-padding uk-margin"
-                data-src={`/content/${article.image.name}`}
-                data-srcset={`/content/${article.image.name}`}
+                data-src={article.image.url}
+                data-srcset={article.image.url}
                 data-uk-img
             >
                 <h1>{article.title}</h1>
@@ -34,7 +34,7 @@ const Article = ({article, pages, categories}) => {
                         <div>
                             {article.writer.picture && (
                                 <img
-                                    src={`/content/${article.writer.picture.name}`}
+                                    src={article.writer.picture.url}
                                     alt={article.writer.picture.alternativeText || article.writer.picture.name}
                                     style={{
                                         position: "static",

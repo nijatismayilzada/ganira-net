@@ -8,7 +8,7 @@ const Card = ({article}) => {
                 <div className="uk-card uk-card-default uk-card-muted">
                     <div className="uk-card-media-top">
                         <img
-                            src={`/content/${article.image.name}`}
+                            src={article.image.url}
                             alt={article.image.alternativeText || article.image.name}
                         />
                     </div>

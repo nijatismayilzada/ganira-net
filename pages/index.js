@@ -15,8 +15,8 @@ const Home = ({articles, categories, global, pages}) => {
                 <div
                     id="main-banner"
                     className="uk-height-large uk-flex uk-flex-center uk-background-cover uk-light uk-padding uk-margin"
-                    data-src={`/content/${global.defaultSeo[0].shareImage.name}`}
-                    data-srcset={`/content/${global.defaultSeo[0].shareImage.name}`}
+                    data-src={global.defaultSeo[0].shareImage.url}
+                    data-srcset={global.defaultSeo[0].shareImage.url}
                     data-uk-img
                 >
                     <h1>{global.defaultSeo[0].metaTitle}</h1>
@@ -43,15 +43,22 @@ export async function getStaticProps({locale}) {
 
     const categories = [...new Map(articles.flatMap((article) => article.category).map(item => [item['id'], item])).values()]
 
-    await fetchImage(global.defaultSeo[0].shareImage);
+    await fetchImage(global.defaultSeo[0].shareImage.url);
 
     for (const article of articles) {
-        await fetchImage(article.image);
-        await fetchImage(article.writer.picture);
+        const images = article.content.match(/]\(\/uploads\/(.*?)\)/g);
+        if(images) {
+            for (const image of images) {
+                await fetchImage(image.substr(2).slice(0, -1))
+            }
+        }
+
+        await fetchImage(article.image.url);
+        await fetchImage(article.writer.picture.url);
     }
 
     for (const page of pages) {
-        await fetchImage(page.image);
+        await fetchImage(page.image.url);
     }
 
 

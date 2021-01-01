@@ -13,7 +13,7 @@ const Seo = ({seo}) => {
         // Add title suffix
         metaTitle: `${seoWithDefaults.metaTitle} | ${siteName}`,
         // Get full image URL
-        shareImage: `/content/${seoWithDefaults.shareImage.name}`
+        shareImage: seoWithDefaults.shareImage.url
     };
 
     return (
