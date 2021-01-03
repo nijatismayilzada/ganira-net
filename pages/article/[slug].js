@@ -63,7 +63,7 @@ export async function getStaticPaths() {
 
     const paths = []
     articles.forEach((article) => {
-        paths.push({params: {slug: article.slug}, locale: article.locale})
+        paths.push({params: {slug: article.slug}, locale: article.category.locale})
 
     });
 
