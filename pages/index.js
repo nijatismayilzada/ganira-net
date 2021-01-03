@@ -64,7 +64,7 @@ export async function getStaticProps({locale}) {
 
     return {
         props: {articles, categories, global, pages},
-        revalidate: 10,
+        revalidate: 1,
     };
 }
 
