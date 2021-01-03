@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const Nav = ({categories, pages}) => {
     return (
@@ -37,10 +38,11 @@ const Nav = ({categories, pages}) => {
                         <li>
                             <Link href="/" locale="en">
                                 <a>
-                                    <img
-                                        className="flag"
+                                    <Image
                                         src="/gb.png"
                                         alt="uk flag"
+                                        width="40"
+                                        height="20"
                                     />
                                 </a>
                             </Link>
@@ -48,10 +50,11 @@ const Nav = ({categories, pages}) => {
                         <li>
                             <Link href="/" locale="az">
                                 <a>
-                                    <img
-                                        className="flag"
+                                    <Image
                                         src="/az.png"
                                         alt="azerbaijani flag"
+                                        width="40"
+                                        height="20"
                                     />
                                 </a>
                             </Link>

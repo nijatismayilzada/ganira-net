@@ -23,16 +23,14 @@ const Category = ({category, categories, articles, pages}) => {
     );
 };
 
-export async function getStaticPaths({locales}) {
+export async function getStaticPaths() {
     const articles = await fetchAPI("/articles");
     const categories = [...new Map(articles.flatMap((article) => article.category).map(item => [item['id'], item])).values()]
 
     const paths = []
     categories.forEach((category) => {
-        locales.forEach((locale) => {
-                paths.push({params: {slug: category.slug}, locale})
-            }
-        )
+        paths.push({params: {slug: category.slug}, locale: category.locale})
+
     });
 
     return {

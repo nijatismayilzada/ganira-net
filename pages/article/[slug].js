@@ -4,6 +4,7 @@ import Layout from "../../components/layout";
 import Seo from "../../components/seo";
 import Date from "../../components/date";
 import React from "react";
+import Image from "next/image";
 
 const Article = ({article, pages, categories}) => {
 
@@ -33,14 +34,12 @@ const Article = ({article, pages, categories}) => {
                     <div className="uk-grid-small uk-flex-left" data-uk-grid="true">
                         <div>
                             {article.writer.picture && (
-                                <img
+                                <Image
+                                    className="uk-border-circle"
                                     src={article.writer.picture.url}
                                     alt={article.writer.picture.alternativeText || article.writer.picture.name}
-                                    style={{
-                                        position: "static",
-                                        borderRadius: "50%",
-                                        height: 30,
-                                    }}
+                                    width="50"
+                                    height="50"
                                 />
                             )}
                         </div>
@@ -59,15 +58,13 @@ const Article = ({article, pages, categories}) => {
     );
 };
 
-export async function getStaticPaths({locales}) {
+export async function getStaticPaths() {
     const articles = await fetchAPI("/articles");
 
     const paths = []
     articles.forEach((article) => {
-        locales.forEach((locale) => {
-                paths.push({params: {slug: article.slug}, locale})
-            }
-        )
+        paths.push({params: {slug: article.slug}, locale: article.locale})
+
     });
 
     return {
