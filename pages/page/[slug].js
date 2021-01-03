@@ -42,7 +42,7 @@ export async function getStaticPaths() {
 
     return {
         paths: paths,
-        fallback: false,
+        fallback: true,
     };
 }
 
@@ -64,7 +64,7 @@ export async function getStaticProps({params, locale}) {
 
     return {
         props: {page, pages, categories},
-        revalidate: 1,
+        revalidate: 10,
     };
 }
 

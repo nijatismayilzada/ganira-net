@@ -35,7 +35,7 @@ export async function getStaticPaths() {
 
     return {
         paths: paths,
-        fallback: false,
+        fallback: true,
     };
 }
 
@@ -58,7 +58,7 @@ export async function getStaticProps({params, locale}) {
 
     return {
         props: {category, categories, articles, pages},
-        revalidate: 1,
+        revalidate: 10,
     };
 }
 
