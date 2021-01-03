@@ -1,13 +1,26 @@
 import App from "next/app";
 import Head from "next/head";
 import "../styles/style.css";
-import React, {createContext} from "react";
+import React, {createContext, useEffect} from "react";
 import {fetchAPI} from "../lib/runtimeLib";
+import * as gtag from "../lib/gtag";
+import {useRouter} from 'next/router'
 
 // Store Strapi Global object in context
 export const GlobalContext = createContext({});
 
 const MyApp = ({Component, pageProps}) => {
+    const router = useRouter()
+    useEffect(() => {
+        const handleRouteChange = (url) => {
+            gtag.pageview(url)
+        }
+        router.events.on('routeChangeComplete', handleRouteChange)
+        return () => {
+            router.events.off('routeChangeComplete', handleRouteChange)
+        }
+    }, [router.events])
+
     const {global} = pageProps;
 
     return (
