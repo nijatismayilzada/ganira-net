@@ -15,7 +15,7 @@ const Category = ({category, categories, articles, pages}) => {
             <Seo seo={seo}/>
             <div className="uk-section">
                 <div className="uk-container uk-container-large">
-                    <h1>{category.name}</h1>
+                    <h1 className="uk-heading-xlarge uk-position-relative uk-position-center">{category.name}</h1>
                     <Articles articles={articles}/>
                 </div>
             </div>

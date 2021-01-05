@@ -16,12 +16,12 @@ const Page = ({page, pages, categories}) => {
             <Seo seo={seo}/>
             <div
                 id="banner"
-                className="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light uk-padding uk-margin"
+                className="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light uk-padding"
                 data-src={page.image.url}
                 data-srcset={page.image.url}
                 data-uk-img
             >
-                <h1>{page.name}</h1>
+                <h1 className="uk-heading-xlarge">{page.name}</h1>
             </div>
             <div className="uk-section">
                 <div className="uk-container uk-container-small">

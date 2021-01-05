@@ -2,8 +2,7 @@ a {
     text-decoration: none;
 }
 
-h1 {
-    font-size: 120px;
+.uk-heading-xlarge {
     font-family: GreatVibes;
     color: #d28622 !important;
     text-shadow: -2px 2px 4px #ffffff,
@@ -12,51 +11,12 @@ h1 {
     -2px -2px 0 #ffffff;
 }
 
-#category {
-    font-weight: 500;
-}
-
-#title {
-    letter-spacing: 0.4px;
-    font-size: 22px;
-    font-size: 1.375rem;
-    line-height: 1.13636;
-}
-
-#description {
-    letter-spacing: 0.4px;
-    font-size: 16px;
-    font-size: 1rem;
-    line-height: 1.13636;
-}
-
 #banner {
-    margin: 20px;
     height: 600px;
-}
-
-#main-banner {
-    margin: 20px;
-}
-
-.flag {
-    width: 40px;
-    height: 20px;
-}
-
-#editor {
-    font-size: 16px;
-    font-size: 1rem;
-    line-height: 1.75;
 }
 
 .uk-navbar-container {
     background: #f5f3f2 !important;
-}
-
-img:hover {
-    opacity: 1;
-    transition: opacity 0.25s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
 body {

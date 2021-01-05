@@ -21,12 +21,12 @@ const Article = ({article, pages, categories}) => {
             <Seo seo={seo}/>
             <div
                 id="banner"
-                className="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light uk-padding uk-margin"
+                className="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light uk-padding"
                 data-src={article.image.url}
                 data-srcset={article.image.url}
                 data-uk-img
             >
-                <h1>{article.title}</h1>
+                <h1 className="uk-heading-xlarge">{article.title}</h1>
             </div>
             <div className="uk-section">
                 <div className="uk-container uk-container-small">
@@ -53,6 +53,7 @@ const Article = ({article, pages, categories}) => {
                             </p>
                         </div>
                     </div>
+                    <hr className="uk-divider-icon"/>
                     <DisqusComments article={article}/>
                 </div>
             </div>
