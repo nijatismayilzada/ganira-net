@@ -4,8 +4,9 @@ const DisqusComments = ({article}) => {
     const disqusShortname = "ganira-net"
     const disqusConfig = {
         url: `https://ganira.net/${article.category.locale}/article/${article.slug}`,
-        identifier: `${article.id}`, // Single post id
-        title: article.title // Single post title
+        identifier: `${article.id}`,
+        title: article.title,
+        language: article.category.locale
     }
     return (
         <div>
