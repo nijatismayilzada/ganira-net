@@ -5,6 +5,7 @@ import Seo from "../../components/seo";
 import Date from "../../components/date";
 import React from "react";
 import Image from "next/image";
+import DisqusComments from "../../components/disqus";
 
 const Article = ({article, pages, categories}) => {
 
@@ -52,6 +53,7 @@ const Article = ({article, pages, categories}) => {
                             </p>
                         </div>
                     </div>
+                    <DisqusComments article={article}/>
                 </div>
             </div>
         </Layout>
