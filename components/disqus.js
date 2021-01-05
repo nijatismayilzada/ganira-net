@@ -1,7 +1,7 @@
 import {DiscussionEmbed} from "disqus-react"
 
 const DisqusComments = ({article}) => {
-    const disqusShortname = "your-disqus-shortname"
+    const disqusShortname = "ganira-net"
     const disqusConfig = {
         url: `https://ganira.net/${article.category.locale}/article/${article.slug}`,
         identifier: `${article.id}`, // Single post id
