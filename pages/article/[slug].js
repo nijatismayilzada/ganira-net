@@ -91,7 +91,7 @@ export async function getStaticProps({params, locale}) {
 
     return {
         props: {article, pages, categories},
-        revalidate: 1,
+        revalidate: 10,
     };
 }
 

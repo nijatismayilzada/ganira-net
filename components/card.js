@@ -16,12 +16,14 @@ const Card = ({article}) => {
                         />
                     </div>
                     <div className="uk-card-body">
-                        <p id="category" className="uk-text-uppercase">
+                        <p id="category" className="uk-text-uppercase uk-text-small">
                             {article.category.name}
                         </p>
                         <p id="title" className="uk-text-large">
                             {article.title}
                         </p>
+                    </div>
+                    <div className="uk-card-footer">
                         <p id="description" className="uk-text-lighter uk-text-italic">
                             {article.description}
                         </p>
