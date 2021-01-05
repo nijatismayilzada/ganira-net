@@ -10,13 +10,16 @@ const Nav = ({categories, pages}) => {
                     <ul className="uk-navbar-nav">
                         <li className="uk-active">
                             <Link href="/">
-                                <a>GANIRA.NET</a>
+                                <a className="ganira-net">GANIRA.NET</a>
                             </Link>
                         </li>
                     </ul>
                 </div>
                 <div className="uk-navbar-center">
                     <ul className="uk-navbar-nav uk-visible@m">
+                        <li>
+                            <a className="insta" href="//instagram.com/gani.raa/">INSTAGRAM</a>
+                        </li>
                         {pages.map((page) => {
                             return (
                                 <li key={page.id}>
@@ -79,31 +82,32 @@ const Nav = ({categories, pages}) => {
 
             <div id="sidenav" uk-offcanvas="mode: push; flip: true; overlay: true" className="uk-offcanvas">
                 <div className="uk-offcanvas-bar">
-
-                    <div className=" uk-position-relative uk-position-medium uk-position-top-center">
-                    <Link href="/" locale="en">
-                        <a className="uk-padding-small">
-                            <Image
-                                src="/gb.png"
-                                alt="uk flag"
-                                width="40"
-                                height="20"
-                            />
-                        </a>
-                    </Link>
-                    <Link href="/" locale="az">
-                        <a className="uk-padding-small">
-                            <Image
-                                src="/az.png"
-                                alt="azerbaijani flag"
-                                width="40"
-                                height="20"
-                            />
-                        </a>
-                    </Link>
+                    <div className="uk-position-relative uk-position-medium uk-position-top-center">
+                        <Link href="/" locale="en">
+                            <a className="uk-padding-small">
+                                <Image
+                                    src="/gb.png"
+                                    alt="uk flag"
+                                    width="40"
+                                    height="20"
+                                />
+                            </a>
+                        </Link>
+                        <Link href="/" locale="az">
+                            <a className="uk-padding-small">
+                                <Image
+                                    src="/az.png"
+                                    alt="azerbaijani flag"
+                                    width="40"
+                                    height="20"
+                                />
+                            </a>
+                        </Link>
                     </div>
                     <ul className="uk-nav uk-nav-default">
-
+                        <li>
+                            <a className="insta" href="https://www.instagram.com/gani.raa/">INSTAGRAM</a>
+                        </li>
                         {pages.map((page) => {
                             return (
                                 <li key={page.id}>
