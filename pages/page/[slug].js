@@ -2,8 +2,20 @@ import ReactMarkdown from "react-markdown";
 import {fetchAPI} from "../../lib/runtimeLib";
 import Layout from "../../components/layout";
 import Seo from "../../components/seo";
+import {useRouter} from "next/router";
+import React from "react";
 
 const Page = ({page, pages, categories}) => {
+
+    const router = useRouter();
+
+    if (router.isFallback) {
+        return (
+            <div>
+                <p>Loading...</p>
+            </div>
+        )
+    }
 
     const seo = {
         metaTitle: page.name,
@@ -16,7 +28,7 @@ const Page = ({page, pages, categories}) => {
             <Seo seo={seo}/>
             <div
                 id="banner"
-                className="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light uk-padding"
+                className="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light uk-padding uk-background-fixed"
                 data-src={page.image.url}
                 data-srcset={page.image.url}
                 data-uk-img
@@ -42,7 +54,7 @@ export async function getStaticPaths() {
 
     return {
         paths: paths,
-        fallback: false,
+        fallback: true,
     };
 }
 

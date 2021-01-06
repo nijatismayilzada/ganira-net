@@ -6,8 +6,19 @@ import Date from "../../components/date";
 import React from "react";
 import Image from "next/image";
 import DisqusComments from "../../components/disqus";
+import {useRouter} from "next/router";
 
 const Article = ({article, pages, categories}) => {
+
+    const router = useRouter();
+
+    if (router.isFallback) {
+        return (
+            <div>
+                <p>Loading...</p>
+            </div>
+        )
+    }
 
     const seo = {
         metaTitle: article.title,
@@ -21,7 +32,7 @@ const Article = ({article, pages, categories}) => {
             <Seo seo={seo}/>
             <div
                 id="banner"
-                className="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light uk-padding"
+                className="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light uk-padding uk-background-fixed"
                 data-src={article.image.url}
                 data-srcset={article.image.url}
                 data-uk-img
@@ -72,7 +83,7 @@ export async function getStaticPaths() {
 
     return {
         paths: paths,
-        fallback: false,
+        fallback: true,
     };
 }
 
