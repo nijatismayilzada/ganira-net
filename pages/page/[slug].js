@@ -2,21 +2,9 @@ import ReactMarkdown from "react-markdown";
 import {fetchAPI} from "../../lib/runtimeLib";
 import Layout from "../../components/layout";
 import Seo from "../../components/seo";
-import {useRouter} from "next/router";
 import React from "react";
 
 const Page = ({page, pages, categories}) => {
-
-    const router = useRouter();
-
-    if (router.isFallback) {
-        return (
-            <div>
-                <p>Loading...</p>
-            </div>
-        )
-    }
-
     const seo = {
         metaTitle: page.name,
         metaDescription: page.description,
@@ -54,7 +42,7 @@ export async function getStaticPaths() {
 
     return {
         paths: paths,
-        fallback: true,
+        fallback: false
     };
 }
 
@@ -75,8 +63,7 @@ export async function getStaticProps({params, locale}) {
         })
 
     return {
-        props: {page, pages, categories},
-        revalidate: 10,
+        props: {page, pages, categories}
     };
 }
 

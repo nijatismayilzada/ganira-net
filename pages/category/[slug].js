@@ -3,19 +3,8 @@ import Layout from "../../components/layout";
 import Seo from "../../components/seo";
 import {fetchAPI} from "../../lib/runtimeLib";
 import React from "react";
-import {useRouter} from "next/router";
 
 const Category = ({category, categories, articles, pages}) => {
-    const router = useRouter();
-
-    if (router.isFallback) {
-        return (
-            <div>
-                <p>Loading...</p>
-            </div>
-        )
-    }
-
     const seo = {
         metaTitle: category.name,
         metaDescription: `All ${category.name} articles`,
@@ -46,7 +35,7 @@ export async function getStaticPaths() {
 
     return {
         paths: paths,
-        fallback: true,
+        fallback: false
     };
 }
 
@@ -68,8 +57,7 @@ export async function getStaticProps({params, locale}) {
         .map(item => [item['id'], item])).values()]
 
     return {
-        props: {category, categories, articles, pages},
-        revalidate: 10,
+        props: {category, categories, articles, pages}
     };
 }
 

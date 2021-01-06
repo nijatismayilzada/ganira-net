@@ -6,15 +6,14 @@ import {fetchAPI} from "../lib/runtimeLib";
 import {fetchImage} from "../lib/buildtimeLib";
 
 const Home = ({articles, categories, global, pages}) => {
-
     return (
         <>
-
             <Layout categories={categories} pages={pages}>
                 <Seo seo={global.defaultSeo[0]}/>
-                <div className="uk-height-large uk-flex uk-flex-center uk-background-cover uk-light uk-padding uk-background-fixed"
-                     data-src={global.defaultSeo[0].shareImage.url} data-srcset={global.defaultSeo[0].shareImage.url}
-                     data-uk-img>
+                <div
+                    className="uk-height-large uk-flex uk-flex-center uk-background-cover uk-light uk-padding uk-background-fixed"
+                    data-src={global.defaultSeo[0].shareImage.url} data-srcset={global.defaultSeo[0].shareImage.url}
+                    data-uk-img>
                     <h1 className="uk-heading-xlarge">{global.defaultSeo[0].metaTitle}</h1>
                 </div>
                 <div className="uk-section">
@@ -59,8 +58,7 @@ export async function getStaticProps({locale}) {
 
 
     return {
-        props: {articles, categories, global, pages},
-        revalidate: 10,
+        props: {articles, categories, global, pages}
     };
 }
 

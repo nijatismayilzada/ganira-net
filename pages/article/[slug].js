@@ -6,20 +6,8 @@ import Date from "../../components/date";
 import React from "react";
 import Image from "next/image";
 import DisqusComments from "../../components/disqus";
-import {useRouter} from "next/router";
 
 const Article = ({article, pages, categories}) => {
-
-    const router = useRouter();
-
-    if (router.isFallback) {
-        return (
-            <div>
-                <p>Loading...</p>
-            </div>
-        )
-    }
-
     const seo = {
         metaTitle: article.title,
         metaDescription: article.description,
@@ -83,7 +71,7 @@ export async function getStaticPaths() {
 
     return {
         paths: paths,
-        fallback: true,
+        fallback: false,
     };
 }
 
@@ -104,8 +92,7 @@ export async function getStaticProps({params, locale}) {
         .map(item => [item['id'], item])).values()];
 
     return {
-        props: {article, pages, categories},
-        revalidate: 10,
+        props: {article, pages, categories}
     };
 }
 
