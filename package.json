@@ -19,7 +19,8 @@
     "react-dom": "^17.0.1",
     "remark": "^13.0.0",
     "remark-html": "^13.0.1",
-    "sharp": "^0.27.0"
+    "sharp": "^0.27.0",
+    "uikit": "^3.6.8"
   },
   "devDependencies": {
     "react-markdown": "^5.0.3"

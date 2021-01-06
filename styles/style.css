@@ -20,7 +20,7 @@ a {
 }
 
 .uk-heading-xlarge {
-    font-family: GreatVibes;
+    font-family: GreatVibes !important;
     color: #d28622 !important;
     text-shadow: -2px 2px 4px #ffffff,
     2px 2px 2px #ffffff,
