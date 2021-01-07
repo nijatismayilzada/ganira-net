@@ -17,13 +17,13 @@ const Nav = ({categories, pages}) => {
                 </div>
                 <div className="uk-navbar-center">
                     <ul className="uk-navbar-nav uk-visible@m">
-                        <li>
+                        <li key="instagram">
                             <a className="insta" href="//instagram.com/gani.raa/">INSTAGRAM</a>
                         </li>
                         {pages.map((page) => {
                             return (
-                                <li key={page.id}>
-                                    <Link as={`/page/${page.slug}`} href="/page/[id]">
+                                <li key={page.name}>
+                                    <Link href={`/page/${page.slug}`}>
                                         <a>{page.name}</a>
                                     </Link>
                                 </li>
@@ -31,8 +31,8 @@ const Nav = ({categories, pages}) => {
                         })}
                         {categories.map((category) => {
                             return (
-                                <li key={category.id}>
-                                    <Link as={`/category/${category.slug}`} href="/category/[id]">
+                                <li key={category.name}>
+                                    <Link href={`/category/${category.slug}`}>
                                         <a>{category.name}</a>
                                     </Link>
                                 </li>
@@ -42,7 +42,7 @@ const Nav = ({categories, pages}) => {
                 </div>
                 <div className="uk-navbar-right">
                     <ul className="uk-navbar-nav uk-visible@m">
-                        <li>
+                        <li key="ukflag">
                             <Link href="/" locale="en">
                                 <a>
                                     <Image
@@ -54,7 +54,7 @@ const Nav = ({categories, pages}) => {
                                 </a>
                             </Link>
                         </li>
-                        <li>
+                        <li key="azflag">
                             <Link href="/" locale="az">
                                 <a>
                                     <Image
@@ -80,7 +80,7 @@ const Nav = ({categories, pages}) => {
             </nav>
 
 
-            <div id="sidenav" uk-offcanvas="mode: push; flip: true; overlay: true" className="uk-offcanvas">
+            <div id="sidenav" uk-offcanvas="mode: push; flip: true; overlay: true">
                 <div className="uk-offcanvas-bar">
                     <div className="uk-position-relative uk-position-medium uk-position-top-center">
                         <Link href="/" locale="en">
@@ -105,13 +105,13 @@ const Nav = ({categories, pages}) => {
                         </Link>
                     </div>
                     <ul className="uk-nav uk-nav-default">
-                        <li>
+                        <li key="instagram">
                             <a className="insta" href="https://www.instagram.com/gani.raa/">INSTAGRAM</a>
                         </li>
                         {pages.map((page) => {
                             return (
-                                <li key={page.id}>
-                                    <Link as={`/page/${page.slug}`} href="/page/[id]">
+                                <li key={page.name}>
+                                    <Link href={`/page/${page.slug}`}>
                                         <a className="uk-text-uppercase">{page.name}</a>
                                     </Link>
                                 </li>
@@ -119,8 +119,8 @@ const Nav = ({categories, pages}) => {
                         })}
                         {categories.map((category) => {
                             return (
-                                <li key={category.id}>
-                                    <Link as={`/category/${category.slug}`} href="/category/[id]">
+                                <li key={category.name}>
+                                    <Link href={`/category/${category.slug}`}>
                                         <a className="uk-text-uppercase">{category.name}</a>
                                     </Link>
                                 </li>
