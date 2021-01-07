@@ -5,10 +5,10 @@ import Image from "next/image";
 const Nav = ({categories, pages}) => {
     return (
         <div>
-            <nav className="uk-navbar-container" uk-navbar="mode: click">
+            <nav className="uk-navbar-container" uk-navbar="true">
                 <div className="uk-navbar-left">
                     <ul className="uk-navbar-nav">
-                        <li className="uk-active">
+                        <li>
                             <Link href="/">
                                 <a className="ganira-net">GANIRA.NET</a>
                             </Link>
@@ -24,7 +24,7 @@ const Nav = ({categories, pages}) => {
                             return (
                                 <li key={page.id}>
                                     <Link as={`/page/${page.slug}`} href="/page/[id]">
-                                        <a className="uk-link-reset">{page.name}</a>
+                                        <a>{page.name}</a>
                                     </Link>
                                 </li>
                             );
@@ -33,7 +33,7 @@ const Nav = ({categories, pages}) => {
                             return (
                                 <li key={category.id}>
                                     <Link as={`/category/${category.slug}`} href="/category/[id]">
-                                        <a className="uk-link-reset">{category.name}</a>
+                                        <a>{category.name}</a>
                                     </Link>
                                 </li>
                             );
@@ -112,7 +112,7 @@ const Nav = ({categories, pages}) => {
                             return (
                                 <li key={page.id}>
                                     <Link as={`/page/${page.slug}`} href="/page/[id]">
-                                        <a className="uk-link-reset uk-text-uppercase">{page.name}</a>
+                                        <a className="uk-text-uppercase">{page.name}</a>
                                     </Link>
                                 </li>
                             );
@@ -121,7 +121,7 @@ const Nav = ({categories, pages}) => {
                             return (
                                 <li key={category.id}>
                                     <Link as={`/category/${category.slug}`} href="/category/[id]">
-                                        <a className="uk-link-reset uk-text-uppercase">{category.name}</a>
+                                        <a className="uk-text-uppercase">{category.name}</a>
                                     </Link>
                                 </li>
                             );

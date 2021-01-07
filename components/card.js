@@ -6,7 +6,7 @@ const Card = ({article}) => {
     return (
         <Link as={`/article/${article.slug}`} href="/article/[id]">
             <a className="uk-link-reset">
-                <div className="uk-card uk-card-default">
+                <div className="uk-card uk-card-default uk-box-shadow-medium uk-box-shadow-hover-xlarge">
                     <div className="uk-card-media-top">
                         <Image
                             src={article.image.url}
