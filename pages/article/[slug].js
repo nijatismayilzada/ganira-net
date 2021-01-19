@@ -28,7 +28,7 @@ const Article = ({article, pages, categories}) => {
                 <h1 className="uk-heading-xlarge">{article.title}</h1>
             </div>
             <div className="uk-section">
-                <div className="uk-container uk-container-small">
+                <div className="uk-container uk-container-xsmall uk-padding">
                     <ReactMarkdown source={article.content} escapeHtml={false}/>
                     <hr className="uk-divider-small"/>
                     <div className="uk-grid-small uk-flex-left" data-uk-grid="true">

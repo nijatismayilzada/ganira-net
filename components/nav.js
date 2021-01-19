@@ -5,7 +5,7 @@ import Image from "next/image";
 const Nav = ({categories, pages}) => {
     return (
         <div>
-            <nav className="uk-navbar-container" uk-navbar="true">
+            <nav className="uk-navbar-container uk-box-shadow-large" uk-navbar="true">
                 <div className="uk-navbar-left">
                     <ul className="uk-navbar-nav">
                         <li>

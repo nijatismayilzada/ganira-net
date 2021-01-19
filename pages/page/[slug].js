@@ -24,7 +24,7 @@ const Page = ({page, pages, categories}) => {
                 <h1 className="uk-heading-xlarge">{page.name}</h1>
             </div>
             <div className="uk-section">
-                <div className="uk-container uk-container-small">
+                <div className="uk-container uk-container-xsmall">
                     <ReactMarkdown source={page.content} escapeHtml={false}/>
                 </div>
             </div>
