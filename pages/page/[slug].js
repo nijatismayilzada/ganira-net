@@ -14,17 +14,13 @@ const Page = ({page, pages, categories}) => {
     return (
         <Layout categories={categories} pages={pages}>
             <Seo seo={seo}/>
-            <div
-                id="banner"
-                className="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light uk-padding uk-background-fixed"
-                data-src={page.image.url}
-                data-srcset={page.image.url}
-                data-uk-img
-            >
-                <h1 className="uk-heading-xlarge">{page.name}</h1>
+            <div id="banner"
+                 className="uk-flex uk-flex-center uk-flex-middle uk-background-cover"
+                 data-src={page.image.url} data-srcset={page.image.url} data-uk-img>
+                <h1 className="living uk-heading-xlarge">{page.name}</h1>
             </div>
             <div className="uk-section">
-                <div className="uk-container uk-container-xsmall">
+                <div className="uk-container uk-container-xsmall uk-padding">
                     <ReactMarkdown source={page.content} escapeHtml={false}/>
                 </div>
             </div>

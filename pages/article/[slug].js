@@ -18,14 +18,10 @@ const Article = ({article, pages, categories}) => {
     return (
         <Layout categories={categories} pages={pages}>
             <Seo seo={seo}/>
-            <div
-                id="banner"
-                className="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light uk-padding uk-background-fixed"
-                data-src={article.image.url}
-                data-srcset={article.image.url}
-                data-uk-img
-            >
-                <h1 className="uk-heading-xlarge">{article.title}</h1>
+            <div id="banner"
+                 className="uk-flex uk-flex-center uk-flex-middle uk-background-cover"
+                 data-src={article.image.url} data-srcset={article.image.url} data-uk-img>
+                <h1 className="living uk-heading-xlarge">{article.title}</h1>
             </div>
             <div className="uk-section">
                 <div className="uk-container uk-container-xsmall uk-padding">

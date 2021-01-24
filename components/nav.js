@@ -17,9 +17,6 @@ const Nav = ({categories, pages}) => {
                 </div>
                 <div className="uk-navbar-center">
                     <ul className="uk-navbar-nav uk-visible@m">
-                        <li key="instagram">
-                            <a className="insta" href="//instagram.com/gani.raa/">INSTAGRAM</a>
-                        </li>
                         {pages.map((page) => {
                             return (
                                 <li key={page.name}>
@@ -105,9 +102,6 @@ const Nav = ({categories, pages}) => {
                         </Link>
                     </div>
                     <ul className="uk-nav uk-nav-default">
-                        <li key="instagram">
-                            <a className="insta" href="https://www.instagram.com/gani.raa/">INSTAGRAM</a>
-                        </li>
                         {pages.map((page) => {
                             return (
                                 <li key={page.name}>

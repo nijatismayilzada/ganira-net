@@ -4,20 +4,52 @@ import Layout from "../components/layout";
 import Seo from "../components/seo";
 import {fetchAPI} from "../lib/runtimeLib";
 import {fetchImage} from "../lib/buildtimeLib";
+import Image from "next/image";
 
 const Home = ({articles, categories, localSeo, pages}) => {
     return (
         <>
             <Layout categories={categories} pages={pages}>
                 <Seo seo={localSeo}/>
-                <div
-                    className="uk-height-large uk-flex uk-flex-center uk-background-cover uk-light uk-padding uk-background-fixed"
-                    data-src={localSeo.shareImage.url} data-srcset={localSeo.shareImage.url}
-                    data-uk-img>
-                    <h1 className="uk-heading-xlarge">{localSeo.metaTitle}</h1>
+                <div className="uk-height-large uk-background-cover uk-flex uk-flex-column uk-flex-right uk-flex-bottom uk-padding-small"
+                    data-src={localSeo.shareImage.url} data-srcset={localSeo.shareImage.url} data-uk-img>
+                    <h1 className="living uk-heading-medium">{localSeo.metaTitle}</h1>
+                    <div className="uk-child-width-auto" uk-grid="true">
+                        <div>
+                            <a href="//instagram.com/gani.raa/" target="_blank" rel="noopener noreferrer">
+                                <Image
+                                    src="/instagram.png"
+                                    alt="instagram.com/gani.raa/"
+                                    width="30"
+                                    height="30"
+                                />
+                            </a>
+                        </div>
+                        <div>
+                            <a href="//linkedin.com/in/ganira/" target="_blank" rel="noopener noreferrer">
+                                <Image
+                                    src="/linkedin.png"
+                                    alt="linkedin.com/in/ganira/"
+                                    width="30"
+                                    height="30"
+                                />
+                            </a>
+                        </div>
+                        <div>
+                            <a href="mailto:contact@ganira.net" uk-tooltip="contact@ganira.net">
+                                <Image
+                                    src="/email.png"
+                                    alt="contact@ganira.net"
+                                    width="30"
+                                    height="30"
+                                />
+                            </a>
+                        </div>
+                    </div>
+
                 </div>
                 <div className="uk-section">
-                    <div className="uk-container uk-container-large">
+                    <div className="uk-container uk-container-medium">
                         <Articles articles={articles}/>
                     </div>
                 </div>
