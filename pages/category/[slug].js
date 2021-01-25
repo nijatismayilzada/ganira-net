@@ -47,7 +47,7 @@ export async function getStaticProps({params, locale}) {
 
     const articles = allArticles.filter((article) => {
         return article.category.slug === params.slug;
-    })
+    }).sort((a, b) => (a.published_at < b.published_at) ? 1 : -1);
 
     const category = articles[0].category;
 
