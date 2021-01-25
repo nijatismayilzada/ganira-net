@@ -77,10 +77,10 @@ export async function getStaticProps({params, locale}) {
         fetchAPI(`/pages?locale=${locale}`),
     ]);
 
-    const article = articles
-        .find((article) => {
-            if (article.slug === params.slug) return article
-        })
+    const article = articles.find((article) => {
+        if (article.slug === params.slug) return article
+    })
+        .sort((a, b) => (a.published_at < b.published_at) ? 1 : -1);
 
     const categories = [...new Map(articles
         .filter((article) => article.category.locale === locale)

@@ -43,7 +43,7 @@ const Nav = ({categories, pages}) => {
                             <Link href="/" locale="en">
                                 <a>
                                     <Image
-                                        src="/gb.png"
+                                        src="/gb.svg"
                                         alt="uk flag"
                                         width="40"
                                         height="20"
@@ -55,7 +55,7 @@ const Nav = ({categories, pages}) => {
                             <Link href="/" locale="az">
                                 <a>
                                     <Image
-                                        src="/az.png"
+                                        src="/az.svg"
                                         alt="azerbaijani flag"
                                         width="40"
                                         height="20"
@@ -66,7 +66,7 @@ const Nav = ({categories, pages}) => {
                     </ul>
                     <a className="uk-hidden@m" uk-toggle="target: #sidenav">
                         <Image
-                            src="/menu_black_48dp.png"
+                            src="/menu.svg"
                             alt="uk flag"
                             width="40"
                             height="40"
@@ -83,7 +83,7 @@ const Nav = ({categories, pages}) => {
                         <Link href="/" locale="en">
                             <a className="uk-padding-small">
                                 <Image
-                                    src="/gb.png"
+                                    src="/gb.svg"
                                     alt="uk flag"
                                     width="40"
                                     height="20"
@@ -93,7 +93,7 @@ const Nav = ({categories, pages}) => {
                         <Link href="/" locale="az">
                             <a className="uk-padding-small">
                                 <Image
-                                    src="/az.png"
+                                    src="/az.svg"
                                     alt="azerbaijani flag"
                                     width="40"
                                     height="20"
