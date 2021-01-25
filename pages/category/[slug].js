@@ -45,13 +45,15 @@ export async function getStaticProps({params, locale}) {
         fetchAPI(`/pages?locale=${locale}`),
     ]);
 
-    const articles = allArticles.filter((article) => {
+    const sortedArticles = allArticles.sort((a, b) => (a.published_at < b.published_at) ? 1 : -1);
+
+    const articles = sortedArticles.filter((article) => {
         return article.category.slug === params.slug;
-    }).sort((a, b) => (a.published_at < b.published_at) ? 1 : -1);
+    });
 
     const category = articles[0].category;
 
-    const categories = [...new Map(allArticles
+    const categories = [...new Map(sortedArticles
         .filter((article) => article.category.locale === locale)
         .flatMap((article) => article.category)
         .map(item => [item['id'], item])).values()]

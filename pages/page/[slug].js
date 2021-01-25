@@ -50,6 +50,7 @@ export async function getStaticProps({params, locale}) {
 
     const categories = [...new Map(articles
         .filter((article) => article.category.locale === locale)
+        .sort((a, b) => (a.published_at < b.published_at) ? 1 : -1)
         .flatMap((article) => article.category)
         .map(item => [item['id'], item])).values()]
 
