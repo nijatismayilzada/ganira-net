@@ -33,3 +33,5 @@ yarn-error.log*
 *.iml
 
 /public/feed/*.xml
+/public/uploads/*
+/tmp/uploads/*
