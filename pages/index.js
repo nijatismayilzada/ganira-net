@@ -2,13 +2,13 @@ import React from "react";
 import Articles from "../components/articles";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
-import {fetchAPI} from "../lib/runtimeLib";
+import {fetchAPI, setLocaleCookie} from "../lib/runtimeLib";
 import {fetchImage, generateRss} from "../lib/buildtimeLib";
 import Image from "next/image";
 import Link from "next/link";
 
 const Home = ({articles, categories, localSeo, pages}) => {
-    const rssUrl = `/feed/rss-${localSeo.locale}.xml`;
+    setLocaleCookie(localSeo.locale);
 
     return (
         <>
@@ -52,7 +52,7 @@ const Home = ({articles, categories, localSeo, pages}) => {
                             </a>
                         </div>
                         <div>
-                            <Link href={rssUrl}>
+                            <Link href={`/feed/rss-${localSeo.locale}.xml`}>
                                 <a uk-tooltip="RSS">
                                     <Image
                                         src="/rss.svg"
