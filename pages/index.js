@@ -1,120 +1,89 @@
-import React from "react";
-import Articles from "../components/articles";
-import Layout from "../components/layout";
-import Seo from "../components/seo";
-import {fetchAPI, setLocaleCookie} from "../lib/runtimeLib";
-import {fetchImage, generateRss} from "../lib/buildtimeLib";
-import Image from "next/image";
-import Link from "next/link";
+import Container from '../components/container'
+import Header from '../components/header'
+import Seo from '../components/seo'
+import ArticlePreview from '../components/article-preview'
+import { getAllArticles, generateRss, compressImage } from '../lib/build-lib'
+import { setLocaleCookie } from '../lib/runtime-lib'
+import Hero from '../components/hero'
 
-const Home = ({articles, categories, localSeo, pages}) => {
-    setLocaleCookie(localSeo.locale);
+export default function Index({ articles, categories, localSeo }) {
+  setLocaleCookie(localSeo.locale);
 
-    return (
-        <>
-            <Layout categories={categories} pages={pages}>
-                <Seo seo={localSeo}/>
-                <div
-                    className="uk-height-large uk-background-cover uk-flex uk-flex-column uk-flex-right uk-flex-bottom uk-padding-small"
-                    data-src={localSeo.shareImage.url} data-srcset={localSeo.shareImage.url} data-uk-img>
-                    <h1 className="living uk-heading-medium">{localSeo.metaTitle}</h1>
-                    <div className="uk-child-width-auto" uk-grid="true">
-                        <div>
-                            <a href="//instagram.com/gani.raa/" target="_blank" rel="noopener noreferrer"
-                               uk-tooltip="instagram.com/gani.raa">
-                                <Image
-                                    src="/instagram.svg"
-                                    alt="instagram.com/gani.raa/"
-                                    width="30"
-                                    height="30"
-                                />
-                            </a>
-                        </div>
-                        <div>
-                            <a href="//linkedin.com/in/ganira/" target="_blank" rel="noopener noreferrer"
-                               uk-tooltip="linkedin.com/in/ganira">
-                                <Image
-                                    src="/linkedin.svg"
-                                    alt="linkedin.com/in/ganira/"
-                                    width="30"
-                                    height="30"
-                                />
-                            </a>
-                        </div>
-                        <div>
-                            <a href="mailto:contact@ganira.net" uk-tooltip="contact@ganira.net">
-                                <Image
-                                    src="/email.svg"
-                                    alt="contact@ganira.net"
-                                    width="30"
-                                    height="30"
-                                />
-                            </a>
-                        </div>
-                        <div>
-                            <Link href={`/feed/rss-${localSeo.locale}.xml`}>
-                                <a uk-tooltip="RSS">
-                                    <Image
-                                        src="/rss.svg"
-                                        alt="rss"
-                                        width="30"
-                                        height="30"
-                                    />
-                                </a>
-                            </Link>
-                        </div>
-                    </div>
+  return (
+    <>
+      <Seo seo={localSeo} />
 
-                </div>
-                <div className="uk-section">
-                    <div className="uk-container uk-container-medium">
-                        <Articles articles={articles}/>
-                    </div>
-                </div>
-            </Layout>
-        </>
-    );
-};
+      <Header categories={categories} localSeo={localSeo} />
+      <Hero title={localSeo.metaTitle} image={"/assets/background.jpeg"} />
 
-export async function getStaticProps({locale}) {
-    // Run API calls in parallel
-    const [allArticles, global, pages] = await Promise.all([
-        fetchAPI("/articles"),
-        fetchAPI("/global"),
-        fetchAPI(`/pages?locale=${locale}`),
-    ]);
-
-    const articles = allArticles
-        .filter((article) => article.category.locale === locale)
-        .sort((a, b) => (a.published_at < b.published_at) ? 1 : -1);
-
-    const categories = [...new Map(articles.flatMap((article) => article.category).map(item => [item['id'], item])).values()]
-
-    const localSeo = global.defaultSeo.filter((seo) => seo.locale === locale)[0];
-
-    await fetchImage(localSeo.shareImage.url);
-
-    for (const article of articles) {
-        const images = article.content.match(/]\(\/uploads\/(.*?)\)/g);
-        if (images) {
-            for (const image of images) {
-                await fetchImage(image.substr(2).slice(0, -1))
-            }
-        }
-
-        await fetchImage(article.image.url);
-        await fetchImage(article.writer.picture.url);
-    }
-
-    for (const page of pages) {
-        await fetchImage(page.image.url);
-    }
-
-    await generateRss(articles, localSeo, locale);
-
-    return {
-        props: {articles, categories, localSeo, pages}
-    };
+      <Container>
+        <div className="columns is-multiline">
+          {articles.map((article) => (
+            <ArticlePreview
+              key={article.slug}
+              title={article.title}
+              date={article.date}
+              slug={article.slug}
+              description={article.description}
+              image={article.image}
+            />
+          ))}
+        </div>
+      </Container>
+    </>
+  )
 }
 
-export default Home
+export const defaultSeo = [
+  {
+    metaTitle: "Living the life of miracles...",
+    metaDescription: "ganira.net - a personal lifestyle blog",
+    locale: "en",
+    shareImage: ""
+  },
+  {
+    metaTitle: "Living the life of miracles...",
+    metaDescription: "ganira.net - Şəxsi blog",
+    locale: "az",
+    shareImage: ""
+  }
+]
+
+
+export async function getStaticProps({ locale }) {
+
+
+
+  const articles = getAllArticles([
+    'title',
+    'description',
+    'category',
+    'locale',
+    'image',
+    'date',
+    'slug',
+    'content'
+  ]).filter((article) => article.locale === locale)
+    .sort((a, b) => (a.date < b.date) ? 1 : -1);
+
+  const categories = articles.flatMap((article) => article.category).filter((v, i, a) => a.indexOf(v) === i)
+
+  const localSeo = defaultSeo.filter((seo) => seo.locale === locale)[0];
+
+  for (const article of articles) {
+    const images = article.content.match(/]\(\/uploads\/(.*?)\)/g);
+    if (images) {
+      for (const image of images) {
+        await compressImage(image.substr(2).slice(0, -1), article.slug)
+      }
+    }
+
+    await compressImage(article.image, article.slug);
+  }
+
+  await generateRss(articles, localSeo);
+
+  return {
+    props: { articles, categories, localSeo }
+  };
+}

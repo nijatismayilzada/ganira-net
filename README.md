@@ -1,4 +1,18 @@
-## [ganira.net](https://www.ganira.net)
+## How to use
+
+Run this to install node dependencies:
+
+```
+npm install
+
+```
 
 
-This blog isimplemented with next.js SSG and Strapi on the backed as headless CMS.
+Run this to start local server:
+
+```
+npm run dev
+
+```
+
+The blog should be up and running on [http://localhost:3000](http://localhost:3000)!

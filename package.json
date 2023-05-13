@@ -1,30 +1,30 @@
 {
-  "name": "learn-starter",
-  "version": "0.1.0",
+  "name": "ganira-net",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "classnames": "^2.2.6",
+    "bulma": "^0.9.4",
     "cookie": "^0.4.1",
-    "date-fns": "^2.16.1",
+    "date-fns": "2.29.3",
     "disqus-react": "^1.0.10",
-    "express": "^4.17.1",
-    "gray-matter": "^4.0.2",
-    "isomorphic-unfetch": "^3.0.0",
-    "next": "^10.0.4",
-    "react": "^17.0.1",
+    "gray-matter": "4.0.3",
+    "next": "^13.3.4",
+    "react": "^18.2.0",
     "react-cookie": "^4.0.3",
-    "react-dom": "^17.0.1",
-    "remark": "^13.0.0",
-    "remark-html": "^13.0.1",
-    "sharp": "^0.27.0",
-    "uikit": "3.4.6"
+    "react-dom": "^18.2.0",
+    "react-markdown": "^8.0.7",
+    "rehype-raw": "^6.1.1",
+    "remark-gfm": "^3.0.1",
+    "sass": "^1.58.3",
+    "sharp": "^0.27.0"
   },
   "devDependencies": {
-    "react-markdown": "^5.0.3"
+    "eslint": "8.5.0",
+    "eslint-config-next": "^13.3.4"
   }
 }

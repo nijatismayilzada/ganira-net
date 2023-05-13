@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+$link: #d28622;
+$link-hover: #666;
+$content-heading-color: #1b1b1b;
+$box-background-color: #fff;
+$body-background-color: #f5f3f2;
+$table-background-color: $body-background-color;
+$table-cell-border: 0;
+
+.great-vibes {
+    font-family: GreatVibes;
+
+    color: #d28622 !important;
+    text-shadow:
+        -2px 2px 0 #ffffff,
+        2px 2px 0 #ffffff,
+        2px -2px 0 #ffffff,
+        -2px -2px 0 #ffffff;
+}
+
+.hero-body {
+    font-family: GreatVibes;
+    font-size: 6rem;
+    color: #d28622 !important;
+    text-shadow: -4px 4px 8px #ffffff,
+        4px 4px 8px #ffffff,
+        4px -4px 8px #ffffff,
+        -4px -4px 8px #ffffff,
+        -4px 4px 8px #ffffff,
+        4px 4px 8px #ffffff,
+        4px -4px 8px #ffffff,
+        -4px -4px 8px #ffffff,
+        -2px 2px 0 #ffffff,
+        2px 2px 0 #ffffff,
+        2px -2px 0 #ffffff,
+        -2px -2px 0 #ffffff;
+    background-image: url("../public/assets/background.jpeg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@font-face {
+    font-family: 'GreatVibes';
+    font-style: normal;
+    font-weight: 400;
+    src: local('GreatVibes'), url(../public/fonts/GreatVibes.otf) format('truetype');
+}
+
+@import "~bulma/bulma.sass";
