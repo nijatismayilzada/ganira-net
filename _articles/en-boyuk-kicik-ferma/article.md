@@ -3,7 +3,7 @@ title: 'Ən böyük kiçik ferma'
 description: 'Bu gün "The biggest little Farm" - "Ən böyük kiçik ferma" adlı sənədli filmə baxdım. Son zamanlar baxdığım ən qəşəng kiçik film idi :) Ferma xəyalımı xatırladım yenə, bir də içimdəki təbiət sevgimi.'
 category: 'Düşüncələrim'
 locale: 'az'
-image: '/uploads/farm_e84750dfbf.jpeg'
+image: 'uploads/farm_e84750dfbf.jpeg'
 date: '2020-04-02'
 ---
 

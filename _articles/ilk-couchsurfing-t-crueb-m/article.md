@@ -3,7 +3,7 @@ title: 'İlk Couchsurfing təcrübəm'
 description: 'İlk couchsurfing təcrübəmizdə evimizi Nicolasa açdıq...'
 category: 'Səyahət'
 locale: 'az'
-image: '/uploads/IMG_20190518_093035_b139742b56.jpg'
+image: 'uploads/IMG_20190518_093035_b139742b56.jpg'
 date: '2019-06-06'
 ---
 
@@ -15,8 +15,8 @@ Xarici görünüşü, pirsinqləri, tatuları, xarakterinə görə bizim alqıla
 
 Çox gözəl təcrübə idi, 2-3 gün öncə sosial fobiyamın üstündə işləmək qərarı vermişdim özümə. Sosial fobiyamla bağlı o qədər həm pis, həm maraqlı anlarım var ki :D (Bəlkə bir gün onlar haqqında da bir az yazaram)  Bunun üstəsindən gəlməyi yaşadığım bəzi hadisələrdən sonra məqsəd etmişdim özümə. Nicolas da elə öz üzərimdə işləməyə başladığım vaxtda gəldi və mən fobiyamın üstünə getmək üçün bunun da əla bir fürsət olduğunu anladım. Bu təcrübənin bizə çox köməyi oldu, ilk postumda couchsurfingin faydalarından yazmışam və bütün o faydaları yaşadıq. Məncə qısa həyatımızı yeni insanlar, fərqli təcrübələrlə rəngləndirmək öz əlimizdədir və bacardıqca bu fürsətləri dəyərləndirməliyik.
 
-![IMG_20190518_093035.jpg](/uploads/IMG_20190518_093035_b139742b56.jpg)
+![IMG_20190518_093035.jpg](uploads/IMG_20190518_093035_b139742b56.jpg)
 
-![Capture-1.jpg](/uploads/Capture_1_3550cff0d9.jpg)
+![Capture-1.jpg](uploads/Capture_1_3550cff0d9.jpg)
 
 Bu arada Nicos payıza doğru Azərbaycana gəlməyi planlayır. Məncə imkanı olan ona evini açıb, onunla tanış olmaq fürsətini qaçırmasın, çox əylənəcək, çoxlu maraqlı məlumatlar alacaqsınız, həm də İngiliscə və ya İspancasını inkişaf etdirmək istəyənlər üçün də gözəl fürsətdir :)

@@ -3,7 +3,7 @@ title: 'İlluziya'
 description: ''
 category: 'Düşüncələrim'
 locale: 'az'
-image: '/uploads/ganira_about_me_2413ded88b.jpg'
+image: 'uploads/ganira_about_me_2413ded88b.jpg'
 date: '2019-06-09'
 ---
 

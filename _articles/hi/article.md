@@ -3,7 +3,7 @@ title: 'Hi!'
 description: 'Hi, my name is Macy :) I want to share a little about my life :)'
 category: 'Life Events'
 locale: 'en'
-image: '/uploads/20200731_111840800_i_OS_scaled_6caf67ff20.jpg'
+image: 'uploads/20200731_111840800_i_OS_scaled_6caf67ff20.jpg'
 date: '2020-08-04'
 ---
 
@@ -25,5 +25,5 @@ You can watch me happily playing here
 
 Enjoy!
 
-![20200730_072917709_iOS-scaled.jpg](/uploads/20200730_072917709_i_OS_scaled_2695ad79c3.jpg)
-![20200731_111829104_iOS-scaled.jpg](/uploads/20200731_111829104_i_OS_scaled_80d45d8f20.jpg)
+![20200730_072917709_iOS-scaled.jpg](uploads/20200730_072917709_i_OS_scaled_2695ad79c3.jpg)
+![20200731_111829104_iOS-scaled.jpg](uploads/20200731_111829104_i_OS_scaled_80d45d8f20.jpg)

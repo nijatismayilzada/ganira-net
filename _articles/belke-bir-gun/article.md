@@ -3,7 +3,7 @@ title: 'Bəlkə bir gün'
 description: 'Çox dibdə olduğum zamanlarda, heç kəsin və heç nəyin kömək etmədiyi zamanlarda, həyat qarşıma mənə kömək edəcək bir dost çıxarır.'
 category: 'Düşüncələrim'
 locale: 'az'
-image: '/uploads/ganira_about_me_2413ded88b.jpg'
+image: 'uploads/ganira_about_me_2413ded88b.jpg'
 date: '2020-02-20'
 ---
 

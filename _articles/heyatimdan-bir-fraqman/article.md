@@ -3,7 +3,7 @@ title: 'Həyatımdan bir fraqman'
 description: 'Uzun zamandır yazmıram. Həm yazmaq istəyirəm, həm də yox. Sanki hərşeyə qarşı marağımı itirmişəm'
 category: 'Həyatımdan Anlar'
 locale: 'az'
-image: '/uploads/IMG_6556_da08d53151_b4a4ec7569.JPG'
+image: 'uploads/IMG_6556_da08d53151_b4a4ec7569.JPG'
 date: '2021-12-06'
 ---
 
@@ -17,20 +17,20 @@ Amma birtəhər məni həyəcanlandıracaq fikirlər tapmağa başladım yavaş-
 
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/HkSfUgmfMWg' frameborder='0' allowfullscreen></iframe></div>
 
-![20210727_094013.JPG](/uploads/20210727_094013_ab6fd86a68_08d498245b.JPG)
+![20210727_094013.JPG](uploads/20210727_094013_ab6fd86a68_08d498245b.JPG)
 
 Diblərdə olduğum günlərdən birində özümü xoşbəxt etmək üçün tək günlük səyahətə Loch Lomonda getmişdim. Bəlkə də məni xoşbəxt edəcək, özümə gələcəm deyə ümid etmişdim amma heç gəzmək içimdən gəlmədi, sadəcə kitab oxuya bildim meşədə. O gün kitabda bu səhifə çıxmışdı qarşıma
 
-![IMG_6318.JPG](/uploads/IMG_6318_969ee766a3_bc4665e70f.JPG)
+![IMG_6318.JPG](uploads/IMG_6318_969ee766a3_bc4665e70f.JPG)
 
 Olduğum situasiyanı üzümə vurmuşdu bu cümlə, bəlkə də fərqində deyildim, bəlkə də görmək istəmirdim. Ya həyat bizimlə danışırsa? Bunun doğru olduğuna əminəm artıq. Amma bəs mən onu eşidə bilirdimmi, duya bilirdimmi? Bəlkə də anlatacaq çooox şeyi var, bəlkə də dayanmadan anlatır...
 
 Elə həmin günün sonunda da bu yazı çıxdı qarşıma
 
-![IMG_6347.JPG](/uploads/IMG_6347_707e3ac1e2_fd4661dbf4.JPG)
+![IMG_6347.JPG](uploads/IMG_6347_707e3ac1e2_fd4661dbf4.JPG)
 
-![IMG_6432.JPG](/uploads/IMG_6432_9581a9f268_8a3b0a4cb3.JPG)
+![IMG_6432.JPG](uploads/IMG_6432_9581a9f268_8a3b0a4cb3.JPG)
 
-![IMG_6439.JPG](/uploads/IMG_6439_4c21877293_9b84926212.JPG)
+![IMG_6439.JPG](uploads/IMG_6439_4c21877293_9b84926212.JPG)
 
 Yazacaq çox duyğu, çox düşüncə, çox yaşanmışlıqlar var, amma hələlik bu qədərini yazıya tökə bildim...

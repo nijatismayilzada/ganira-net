@@ -3,7 +3,7 @@ title: '10 günlük UK səyahətimiz'
 description: 'Səyahətimizə Mançesterdən başladıq...'
 category: 'Səyahət'
 locale: 'az'
-image: '/uploads/ganira_about_me_2413ded88b.jpg'
+image: 'uploads/ganira_about_me_2413ded88b.jpg'
 date: '2019-07-17'
 ---
 

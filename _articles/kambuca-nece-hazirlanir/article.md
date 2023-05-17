@@ -3,7 +3,7 @@ title: 'Kambuça necə hazırlanır?'
 description: 'Kambuçanın hazırlanması əslində çox asandır, işin çətin tərəfi kambuça anasının tapılmasıdır'
 category: 'Qidalanma'
 locale: 'az'
-image: '/uploads/20201222_193432628_i_OS_8f2c09b314_9a48c12cfe.jpg'
+image: 'uploads/20201222_193432628_i_OS_8f2c09b314_9a48c12cfe.jpg'
 date: '2021-12-06'
 ---
 
@@ -12,7 +12,7 @@ Kambuçanın nə olduğunu və faydalarını bilmirsinizsə deyərdim bu posta  
 [Kambuça nədir?](https://ganira.net/az/articles/kambuca-nedir)
 
 Burda isə mən yalnızca hazırlanmasından danışacam. Kambuçanın hazırlanması əslində çox asandır, işin çətin tərəfi kambuça anasının tapılmasıdır. Buna SCOBY (symbiotic culture of bacteria and yeast)     deyilir çox yerdə, yəni ki bakteriya və göbələklərin simbioz yaşadığı bir mat. SCOBY bir dəfə tapıldıqdan sonra balalayır və sadəcə 1 neçə aya 4-5 SCOBY-niz olur. Bunun ən yaxşı yolu kambuça sevər qonşulardan, tanışlardan bala SCOBY istəməkdir. Və ya lokal kafe və restoranlarda kambuça verilirsə onlardan bala istəmək mümkündür, o da yoxdursa almaq. Anlayıram ki Azərbaycanda kambuça məşhur deyil və tapmaq çətin olacaq. Onlayn marketlərdən xaricdən almaq variantı da var. Və ya 0-dan öz kambuça SCOBY-nizi də düzəldə bilərsiniz, bunun üçün internetdə araşdıra bilərsiniz. Mənim yaşadığım ərazidə Kambuça sevərlər olduğu üçün SCOBY tapmaqda çətinlik çəkmədim, və balalarım da çoxdur, istəyən olsa mail yazın Bakıya gələndə imkan olsa gətirim :D
-![20210130_102756002_iOS.jpg](/uploads/20210130_102756002_i_OS_27b5cd519c_071646c5ee.jpg)
+![20210130_102756002_iOS.jpg](uploads/20210130_102756002_i_OS_27b5cd519c_071646c5ee.jpg)
 
 SCOBY-ni tapdıqdan sonra, bizə ancaq şəkər, çay və başlanğıc kambuça (starter) lazımdır. Amma çay natural, ədviyyatsız olmaıdır. Ya adi qara çay və ya yaşıl çay. Çünki müxtəlif ədviyyatlar SCOBY-nin bakteriyalarını öldürə bilir, məsələn berqamot ətirli çaylar. SCOBY isə çoxunluqla su içində gəlir, bu su elə başlanğıc kombuçadır. Məntiq bəsit halda belədir: Şirin çaya scoby-ni və başlanğıc kombuçanı atırıq, otaq temperaturlu qaranlıq yerdə 1-2 həftə fermentə olmasını gözləyirik. Və VOİLA! 1-2 (bəzən 3) həftə sonra hazırdır, bu halda da içə bilərik, amma daha dadlı və əyləncəli olmasını istəyiriksə bundan sonra "FUN PART" dadlandırma və butulkalara doldurma hissəsi gəlir :) Keçək reseptə.
 
@@ -41,9 +41,9 @@ Yaxşı olar ki, 0-dan öz kambuçanızı etməzdən əvvəl marketlərdən və 
 Kambuçanın insanlar üzərində araşdırması olmadığı üçün çox içmək təhlükəli ola bilər. Ona görə də tövsiyə edilən miqdar gündəlik 1 stəkana kimidir. Bundan artıq olması yenə də sağlamlığa ziyan ola bilər.
 
 Əgər kambuçanızın fermentasiyası bitibsə keçirik dadlandırmaya.
-![20210210_104630093_iOS.jpg](/uploads/20210210_104630093_i_OS_d097ad8324_23dfecc9b4.jpg)
+![20210210_104630093_iOS.jpg](uploads/20210210_104630093_i_OS_d097ad8324_23dfecc9b4.jpg)
 
-![20210210_110303470_iOS.jpg](/uploads/20210210_110303470_i_OS_4bf8925bf7_2470c47bdc.jpg)
+![20210210_110303470_iOS.jpg](uploads/20210210_110303470_i_OS_4bf8925bf7_2470c47bdc.jpg)
 
 Dadlandırma zövqdən asılıdır. Kambuçanı dadlandırmadan, original kambuça olaraq da içə bilərik. Amma əgər həm daha dadlı, həm də əyləncəli olsun istəyiriksə dadlandırma çox maraqlı olacaq. Dadlandırma mərhələsi mənim üçün həmişə eksperimentdir, yeni dadları, kombinasiyaları hər fermentasiyada yoxlayıram.
 
@@ -54,9 +54,9 @@ Nə edirik? Şüşə butulkalara istədiyimiz meyvəni və ya ədviyyatı doğra
 Təzə başlarda qazlı kambuçalarınız alınmasa qəti narahat olmayın. Zamanla o da öz-özündən alınır.
 
 Sadəcə zamanla, səbrlə eksperiment etməyə davam etmək lazımdır ideal kambuça alınana qədər.
-![20201213_143454954_iOS.jpg](/uploads/20201213_143454954_i_OS_17252be8e8_baa94b0ea5.jpg)
+![20201213_143454954_iOS.jpg](uploads/20201213_143454954_i_OS_17252be8e8_baa94b0ea5.jpg)
 
 Mənim sevimli kambuça dadlarım, alma, armud, portağal, alma+darçın çubuğu, hər hansı meyvə+ nanə və ya rozmarın, qərənfil və s. Mən də hələ də eksperimentlərimə davam edirəm. Çuğunduru da yoxlamışam, maraqlı olur, amma hamının zövqünə görə olacağını düşünmürəm :)
 Bir də tövsiyə edərdim başlamazdan əvvəl internetdə öz araşdırmalarınızı edəsiniz, digər insanların da fikirlərini ala bilər, eyni zamanda dadlandırmada nələrin yaxşı alındığını başqa insanların təcrübələrindən də öyrənə bilərsiniz. Suallarınız olsa isə şərhdə yaza bilərsiniz, növbəti postlarda suallara cavab yazmağa çalışaram.
 Ümid edirəm faydalı olmuşdur! :)
-![20201222_193432628_iOS.jpg](/uploads/20201222_193432628_i_OS_8f2c09b314_9a48c12cfe.jpg)
+![20201222_193432628_iOS.jpg](uploads/20201222_193432628_i_OS_8f2c09b314_9a48c12cfe.jpg)

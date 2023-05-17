@@ -3,7 +3,7 @@ title: 'Fitik asidli qidaları necə yeyək?'
 description: 'Niyə bəzi bitki mənşəli qidaları bişirməzdən və yeməzdən əvvəl sirkəli suda saxlayırıq?'
 category: 'Qidalanma'
 locale: 'az'
-image: '/uploads/beautiful_picture_d87f94b2ea.jpg'
+image: 'uploads/beautiful_picture_d87f94b2ea.jpg'
 date: '2019-11-14'
 ---
 

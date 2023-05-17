@@ -3,7 +3,7 @@ title: 'İnstagramsız 21-ci gün'
 description: 'Mən ara sıra İnstagram detoksu edirəm psixologiyamı qorumaq adına'
 category: 'Düşüncələrim'
 locale: 'az'
-image: '/uploads/2806_2019_014614831396376027657_bf5a714413.jpeg'
+image: 'uploads/2806_2019_014614831396376027657_bf5a714413.jpeg'
 date: '2019-06-28'
 ---
 
@@ -23,10 +23,10 @@ Amma İnstagramsız bu 18 gündə real həyatda hətta heç tanımadığım, ba�
 İndi isə səyahətdəyəm, hətta düşünürdüm ki yəqin səyahətdə ürəyim istəyəcək instagramı aktivləşdirmək, əksii oldu! Çünki telefona daha az baxıb, səyahətimin dadını rəsmən çıxarırammış :) İnstagramın əvəzinə səyahət dəftərim var, artıq unutmaq istəmədiyim anlarımı yaşadıqca dəftərimə yazıram.
 
 Central Perk Cafe Manchester
-![2806-2019-014614831396376027657.jpeg](/uploads/2806_2019_014614831396376027657_bf5a714413.jpeg)
+![2806-2019-014614831396376027657.jpeg](uploads/2806_2019_014614831396376027657_bf5a714413.jpeg)
 
 Səyahət gündəliyim
-![2806-2019-010750730810334852516.jpeg](/uploads/2806_2019_010750730810334852516_557da554eb.jpeg)
+![2806-2019-010750730810334852516.jpeg](uploads/2806_2019_010750730810334852516_557da554eb.jpeg)
 
 Hal-hazırda İnstagramı qəti istəmirəm, amma bəzən lazım olur hər hansı məlumatı əldə etmək üçün və ya bəzən bəzi şəkilləri paylaşıb sadəcə şəkil albomu kimi xatirəm qalsın da istəyirəm. Amma hələ ki instagramı necə effektiv istifadə edə bilərəmimin dəqiq formulunu tapa bilməmişəm, bu formulu tapsam bəlkə bezmədən və effektiv istifadə edə bilərəm. Çünki zaman itirməkdən də əlavə mən İnstagramda enerji də itirirdim. İnsanlarla çox içli-dışlı olursan, kim hardadı, nə edir, necə edirə qədər nə qədər insan görürsən və fərqində olmadan beyin yorulur. Bunu da ancaq detoks zamanı fərq edirsən :)
 

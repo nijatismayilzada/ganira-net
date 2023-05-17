@@ -3,7 +3,7 @@ title: '2019-un ən ağlıma gəlməyəcək hadisəsi'
 description: '2019-da yaşadıqlarım, başıma gələnlər ağlıma gəlməyəcək qədər böyük və inandırıcı olmayacaq qədər "magical" idi...'
 category: 'Həyatımdan Anlar'
 locale: 'az'
-image: '/uploads/6_0e4b52afba.jpg'
+image: 'uploads/6_0e4b52afba.jpg'
 date: '2019-12-28'
 ---
 
@@ -19,6 +19,6 @@ Konfrans sentyabr ayında olsa da mən 3 ay sonra haqqında yazmağa cəsarət t
 
 Konfransdakı çıxışım mənim üçün çox özəldir, onu hələ ki paylaşmaq istəmirəm. Bəlkə bir gün onu da paylaşaram :)
 
-![6.jpg](/uploads/6_0e4b52afba.jpg)
+![6.jpg](uploads/6_0e4b52afba.jpg)
 
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed//FigpiYBZa-M' frameborder='0' allowfullscreen></iframe></div>
