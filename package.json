@@ -8,23 +8,25 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "bulma": "^0.9.4",
-    "cookie": "^0.4.1",
-    "date-fns": "2.29.3",
-    "disqus-react": "^1.0.10",
+    "bulma": "^1.0.3",
+    "cookie": "^1.0.2",
+    "date-fns": "4.1.0",
+    "disqus-react": "^1.1.5",
     "gray-matter": "4.0.3",
-    "next": "^13.3.4",
-    "react": "^18.2.0",
-    "react-cookie": "^4.0.3",
-    "react-dom": "^18.2.0",
-    "react-markdown": "^8.0.7",
-    "rehype-raw": "^6.1.1",
-    "remark-gfm": "^3.0.1",
-    "sass": "^1.58.3",
-    "sharp": "^0.27.0"
+    "install": "^0.13.0",
+    "next": "^15.1.6",
+    "npm": "^11.0.0",
+    "react": "^18.3.1",
+    "react-cookie": "^7.2.2",
+    "react-dom": "^18.3.1",
+    "react-markdown": "^9.0.3",
+    "rehype-raw": "^7.0.0",
+    "remark-gfm": "^4.0.0",
+    "sass": "^1.83.4",
+    "sharp": "^0.33.5"
   },
   "devDependencies": {
-    "eslint": "8.5.0",
-    "eslint-config-next": "^13.3.4"
+    "eslint": "9.19.0",
+    "eslint-config-next": "^15.1.6"
   }
 }

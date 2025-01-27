@@ -2,18 +2,18 @@ import Container from '../../components/container'
 import Header from '../../components/header'
 import Seo from '../../components/seo'
 import ArticlePreview from '../../components/article-preview'
-import { getAllArticles } from '../../lib/build-lib'
-import { defaultSeo } from '..'
+import {getAllArticles} from '../../lib/build-lib'
+import {defaultSeo} from '..'
 import Hero from '../../components/hero'
 
-export default function Category({ articles, categories, localSeo, currentCategory }) {
+export default function Category({articles, categories, localSeo, currentCategory}) {
     return (
         <>
-            <Seo seo={localSeo} />
+            <Seo seo={localSeo}/>
 
-            <Header categories={categories} localSeo={localSeo} />
+            <Header categories={categories} localSeo={localSeo}/>
 
-            <Hero title={currentCategory} image={"/assets/background.jpeg"} />
+            <Hero title={currentCategory} image={"/assets/background.jpeg"}/>
 
             <Container>
                 <div className="columns is-multiline">
@@ -34,7 +34,7 @@ export default function Category({ articles, categories, localSeo, currentCatego
 }
 
 
-export async function getStaticProps({ params, locale }) {
+export async function getStaticProps({params, locale}) {
 
     const articles = getAllArticles([
         'title',
@@ -57,7 +57,7 @@ export async function getStaticProps({ params, locale }) {
     const localSeo = defaultSeo.filter((seo) => seo.locale === locale)[0];
 
     return {
-        props: { articles: articlesOfCategory, categories, localSeo, currentCategory }
+        props: {articles: articlesOfCategory, categories, localSeo, currentCategory}
     };
 }
 

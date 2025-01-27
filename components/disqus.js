@@ -1,6 +1,6 @@
-import { DiscussionEmbed } from "disqus-react"
+import {DiscussionEmbed} from "disqus-react"
 
-const DisqusComments = ({ article }) => {
+const DisqusComments = ({article}) => {
     const disqusShortname = "ganira-net"
     const disqusConfig = {
         url: `https://ganira.net/${article.locale}/articles/${article.slug}`,

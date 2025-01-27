@@ -1,51 +1,72 @@
 @charset "utf-8";
+@use "sass:meta";
+@use "bulma/sass";
 
-$link: #d28622;
-$link-hover: #666;
-$content-heading-color: #1b1b1b;
-$box-background-color: #fff;
-$body-background-color: #f5f3f2;
-$table-background-color: $body-background-color;
+$gold: #d28622;
+$gray: #666;
+$white: #ffffff;
+$dirty-white: #f5f3f2;
+//$content-heading-color: #1b1b1b;
+//$box-background-color: #fff;
+//$body-background-color: #f5f3f2;
+//$table-background-color: $body-background-color;
 $table-cell-border: 0;
 
 .great-vibes {
-    font-family: GreatVibes;
+  font-family: GreatVibes, sans-serif;
 
-    color: #d28622 !important;
-    text-shadow:
-        -2px 2px 0 #ffffff,
-        2px 2px 0 #ffffff,
-        2px -2px 0 #ffffff,
-        -2px -2px 0 #ffffff;
+  color: $gold !important;
+  text-shadow: -2px 2px 0 $white,
+  2px 2px 0 $white,
+  2px -2px 0 $white,
+  -2px -2px 0 $white;
 }
 
 .hero-body {
-    font-family: GreatVibes;
-    font-size: 6rem;
-    color: #d28622 !important;
-    text-shadow: -4px 4px 8px #ffffff,
-        4px 4px 8px #ffffff,
-        4px -4px 8px #ffffff,
-        -4px -4px 8px #ffffff,
-        -4px 4px 8px #ffffff,
-        4px 4px 8px #ffffff,
-        4px -4px 8px #ffffff,
-        -4px -4px 8px #ffffff,
-        -2px 2px 0 #ffffff,
-        2px 2px 0 #ffffff,
-        2px -2px 0 #ffffff,
-        -2px -2px 0 #ffffff;
-    background-image: url("../public/assets/background.jpeg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  font-family: GreatVibes;
+  font-size: 6rem;
+  color: $gold !important;
+  text-shadow: -4px 4px 8px $white,
+  4px 4px 8px $white,
+  4px -4px 8px $white,
+  -4px -4px 8px $white,
+  -4px 4px 8px $white,
+  4px 4px 8px $white,
+  4px -4px 8px $white,
+  -4px -4px 8px $white,
+  -2px 2px 0 $white,
+  2px 2px 0 $white,
+  2px -2px 0 $white,
+  -2px -2px 0 $white;
+  background-image: url("../public/assets/background.jpeg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body {
+  background-color: $dirty-white;
+}
+
+a {
+  color: $gold
+}
+
+a:hover {
+  color: $gray
+}
+
+.card {
+  --bulma-card-radius: .35rem;
+}
+
+.box {
+  --bulma-box-radius: .35rem;
 }
 
 @font-face {
-    font-family: 'GreatVibes';
-    font-style: normal;
-    font-weight: 400;
-    src: local('GreatVibes'), url(../public/fonts/GreatVibes.otf) format('truetype');
+  font-family: 'GreatVibes';
+  font-style: normal;
+  font-weight: 400;
+  src: local('GreatVibes'), url(../public/fonts/GreatVibes.otf) format('truetype');
 }
-
-@import "~bulma/bulma.sass";
