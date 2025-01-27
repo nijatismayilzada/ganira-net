@@ -3,12 +3,9 @@ import Header from '../components/header'
 import Seo from '../components/seo'
 import ArticlePreview from '../components/article-preview'
 import {compressImage, generateRss, getAllArticles} from '../lib/build-lib'
-import {setLocaleCookie} from '../lib/runtime-lib'
 import Hero from '../components/hero'
 
 export default function Index({articles, categories, localSeo}) {
-    setLocaleCookie(localSeo.locale);
-
     return (
         <>
             <Seo seo={localSeo}/>
