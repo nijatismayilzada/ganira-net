@@ -25,10 +25,16 @@ Life is like dancing.
 
 Lately I’ve been obsessed on the idea of dancing. I chose “dance” as my theme for the coming year, not only as a physical practice but as a philosophical metaphor and a symbolic act. I love to dance, though I’m not very good at it. Some time ago I read Nietzsche’s line about believing “only in a god who can dance,” and I became obsessed with the idea. To Nietzsche, dancing meant embracing life, moving in harmony with its rhythm, aligning body, spirit, and thought, and celebrating life even with its mistakes, flaws, obstacles. The idea stuck with me and became my motto for the coming year, even if I forget it often.
 
+![](/Users/ganiraahmadova/Repo/ganira-net/_articles/dancing-with-life/uploads/IMG_3916.jpeg)
+
+![](/Users/ganiraahmadova/Repo/ganira-net/_articles/dancing-with-life/uploads/IMG_3906.jpeg)
+
 For a long time, couple dancing, tango or something similar was on my bucket list. Then, through a string of coincidences, about a month ago we signed up for couple dance classes. We went, and we even attended a few tango lessons, though not as regularly as I wanted. Life and illnesses got in the way, but we’ll keep going. I want to train my body, mind, and spirit to dance to live in a harmonious rhythm with life.
 
 I didn’t expect this blog post to end up here, from the year's biggest lesson to dance.  But writing it out felt right. When I asked ChatGPT what Nietzsche meant, its reply resonated: Nietzsche is saying, “A God who dances is a God who celebrates the beauty and chaos of existence — not one who condemns it.” It’s a call to find the divine creativity and joy within ourselves.
 
 This year brought many other things: new friends, deeper levels of friendship with some old ones, and the painful fading of a few relationships. I traveled to new cities and countries. We started playing tennis this summer, dance course, read few books, tried new recipec, lots of gatherings with friends. I experienced many important moments and missed some equally important ones: I missed weddings of people close to me and couldn’t be beside some loved once on meaningful days. Those absences hurt.
 
-So here I am, entering 31. A little more worn, a little more fragile, but maybe a little freer to make mistakes and to dance anyway. My resolution isn’t a dramatic overhaul, it’s a quiet commitment: to keep learning, to keep accepting my errors, and to keep moving — to dance with life, imperfectly and with joy. And the most important is to not forget what I just written down as my resolution for the coming year :) 
+So here I am, entering 31. A little more worn, a little more fragile, but maybe a little freer to make mistakes and to dance anyway. My resolution isn’t a dramatic overhaul, it’s a quiet commitment: to keep learning, to keep accepting my errors, and to keep moving - to dance with life, imperfectly and with joy. And the most important is to not forget what I just written down as my resolution for the coming year :) 
+
+![](/Users/ganiraahmadova/Repo/ganira-net/_articles/dancing-with-life/uploads/IMG_7786.jpeg)
