@@ -31,7 +31,7 @@ Lately I’ve been obsessed on the idea of dancing. I chose “dance” as my th
 
 For a long time, couple dancing, tango or something similar was on my bucket list. Then, through a string of coincidences, about a month ago we signed up for couple dance classes. We went, and we even attended a few tango lessons, though not as regularly as I wanted. Life and illnesses got in the way, but we’ll keep going. I want to train my body, mind, and spirit to dance to live in a harmonious rhythm with life.
 
-I didn’t expect this blog post to end up here, from the year's biggest lesson to dance.  But writing it out felt right. When I asked ChatGPT what Nietzsche meant, its reply resonated: Nietzsche is saying, “A God who dances is a God who celebrates the beauty and chaos of existence — not one who condemns it.” It’s a call to find the divine creativity and joy within ourselves.
+I didn’t expect this blog post to end up here, from the year's biggest lesson to dance.  But writing it out felt right. When I asked ChatGPT what Nietzsche meant, its reply resonated: Nietzsche is saying, “A God who dances is a God who celebrates the beauty and chaos of existence not one who condemns it.” It’s a call to find the divine creativity and joy within ourselves.
 
 This year brought many other things: new friends, deeper levels of friendship with some old ones, and the painful fading of a few relationships. I traveled to new cities and countries. We started playing tennis this summer, dance course, read few books, tried new recipec, lots of gatherings with friends. I experienced many important moments and missed some equally important ones: I missed weddings of people close to me and couldn’t be beside some loved once on meaningful days. Those absences hurt.
 
