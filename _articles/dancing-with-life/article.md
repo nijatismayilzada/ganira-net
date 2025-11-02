@@ -4,7 +4,7 @@ description: ' "I would believe only in a God who could dance," Friedrich Nietzs
 category: 'My Thoughts'
 locale: 'en'
 image: ''
-date: '02-11-2025'
+date: '2025-11-02'
 ---
 
 I’m turning 31. Somehow the year flew by again — faster than I expected. We lived through a lot.
