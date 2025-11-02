@@ -1,13 +1,11 @@
 ---
 title: 'Dancing with the life'
 description: ' "I would believe only in a God who could dance," Friedrich Nietzsche'
-category: 'My thoughts'
+category: 'My Thoughts'
 locale: 'en'
 image: ''
-date: '02-11-2994'
+date: '02-11-2025'
 ---
-
-
 
 I’m turning 31. Somehow the year flew by again — faster than I expected. We lived through a lot.
 
@@ -30,7 +28,5 @@ For a long time, couple dancing—tango or something similar—was on my bucket 
 I didn’t expect this blog post to end up here, from the year's biggest lesson to dance.  But writing it out felt right. When I asked ChatGPT what Nietzsche meant, its reply resonated: Nietzsche is saying, “A God who dances is a God who celebrates the beauty and chaos of existence — not one who condemns it.” It’s a call to find the divine creativity and joy within ourselves.
 
 This year brought many other things: new friends, deeper levels of friendship with some old ones, and the painful fading of a few relationships. I traveled to new cities and countries. We started playing tennis this summer, dance course, read few books, tried new recipec, lots of gatherings with friends. I experienced many important moments — and missed some equally important ones: I missed weddings of people close to me and couldn’t be beside some loved once on meaningful days. Those absences hurt.
-
-
 
 So here I am, entering 31. A little more worn, a little more fragile, but maybe a little freer to make mistakes and to dance anyway. My resolution isn’t a dramatic overhaul, it’s a quiet commitment: to keep learning, to keep accepting my errors, and to keep moving — to dance with life, imperfectly and with joy. And the most important is to not forget what I just written down as my resolution for the coming year :) 
