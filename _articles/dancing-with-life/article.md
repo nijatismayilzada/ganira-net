@@ -3,7 +3,7 @@ title: 'Dancing with the life'
 description: ' "I would believe only in a God who could dance," Friedrich Nietzsche'
 category: 'My Thoughts'
 locale: 'en'
-image: ''
+image: 'uploads/received_10156059289613874.jpeg'
 date: '2025-11-02'
 ---
 
@@ -20,6 +20,8 @@ Then the result arrived and it turned out the situation was far worse than befor
 That was a huge lesson for me. I’m an anxious person and I’ve always feared making mistakes, as if each one were the end of the world. But sometimes mistakes save lives. Mistakes are also part of being human. We will do mistakes the important thing is to learn how to live with those errors, accept them, and choose to learn from them. 
 
 Life is like dancing.
+
+![](/Users/ganiraahmadova/Repo/ganira-net/_articles/dancing-with-life/uploads/DSCN2540.JPG)
 
 Lately I’ve been obsessed on the idea of dancing. I chose “dance” as my theme for the coming year, not only as a physical practice but as a philosophical metaphor and a symbolic act. I love to dance, though I’m not very good at it. Some time ago I read Nietzsche’s line about believing “only in a god who can dance,” and I became obsessed with the idea. To Nietzsche, dancing meant embracing life, moving in harmony with its rhythm, aligning body, spirit, and thought, and celebrating life even with its mistakes, flaws, obstacles. The idea stuck with me and became my motto for the coming year, even if I forget it often.
 
