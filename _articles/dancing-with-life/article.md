@@ -1,5 +1,5 @@
 ---
-title: 'Dancing with the life'
+title: 'Dancing with life'
 description: ' "I would believe only in a God who could dance," Friedrich Nietzsche'
 category: 'My Thoughts'
 locale: 'en'
