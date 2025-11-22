@@ -3,7 +3,7 @@ title: 'Turş maya (Sourdough)'
 description: 'Son zamanlar məşhurlaşan turş mayalı çörək  əslində ən qədim və original çörək bişirmə növüdür. Axı bir zamanlar hazır maya yox idi və nənə-babalarımız yenə də çörək bişirirdilər. Bəs həqiqətən turş mayalı çörək deyildiyi kimi ən sağlam çörək növüdür? Həm mayamı hazırladım, həm çörəyimi bişirdim, həm də araşdırmalarımı edib bu postu yazmaq qərarına gəldim.'
 category: 'Qidalanma'
 locale: 'az'
-image: 'uploads/9_EFCD_59_D_4260_4_ED_5_9_AF_4_8_DC_8703_C1997_c6f508c9b6.jpeg'
+image: 'article/9_EFCD_59_D_4260_4_ED_5_9_AF_4_8_DC_8703_C1997_c6f508c9b6.jpeg'
 date: '2020-05-06'
 ---
 
@@ -35,6 +35,6 @@ Araşdırmalar hətta şəkər xəstələri üçün də ən faydalı növ çör�
 
 Nəticədə turş mayalı çörək təkcə dadı ilə deyil həm də faydaları ilə digər çörəkləri geridə qoyur. Çoxları hazırlanışının çətin olduğunu düşünsə də, mən çətin deyil də sadəcə  çox vaxt apardığını düşünürəm və əksinə bu prosesdən olduqca zövq alıram.
 
-![9EFCD59D-4260-4ED5-9AF4-8DC8703C1997.jpeg](uploads/9_EFCD_59_D_4260_4_ED_5_9_AF_4_8_DC_8703_C1997_c6f508c9b6.jpeg)
-![D5F61F6F-A1A7-460C-84FB-136568C508B0.jpeg](uploads/D5_F61_F6_F_A1_A7_460_C_84_FB_136568_C508_B0_a7fb7fd647.jpeg)
-![AF0578EA-062D-4DC8-960C-C2A47A27961B-scaled.jpeg](uploads/AF_0578_EA_062_D_4_DC_8_960_C_C2_A47_A27961_B_scaled_6dc302e826.jpeg)
+![9EFCD59D-4260-4ED5-9AF4-8DC8703C1997.jpeg](article/9_EFCD_59_D_4260_4_ED_5_9_AF_4_8_DC_8703_C1997_c6f508c9b6.jpeg)
+![D5F61F6F-A1A7-460C-84FB-136568C508B0.jpeg](article/D5_F61_F6_F_A1_A7_460_C_84_FB_136568_C508_B0_a7fb7fd647.jpeg)
+![AF0578EA-062D-4DC8-960C-C2A47A27961B-scaled.jpeg](article/AF_0578_EA_062_D_4_DC_8_960_C_C2_A47_A27961_B_scaled_6dc302e826.jpeg)

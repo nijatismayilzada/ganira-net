@@ -67,7 +67,7 @@ export async function getStaticProps({locale}) {
     const localSeo = defaultSeo.filter((seo) => seo.locale === locale)[0];
 
     for (const article of articles) {
-        const images = article.content.match(/]\(\/uploads\/(.*?)\)/g);
+        const images = article.content.match(/]\(\/article\/(.*?)\)/g);
         if (images) {
             for (const image of images) {
                 await compressImage(image.substr(2).slice(0, -1), article.slug)
